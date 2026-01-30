@@ -94,6 +94,18 @@
             <a href="#tarifs" class="inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-primary text-white shadow-lg transition hover:scale-105 hover:bg-primaryDark">Voir les tarifs</a>
             <a href="#services" class="inline-flex items-center justify-center px-6 py-3 rounded-2xl border border-white/70 text-white shadow-lg transition hover:scale-105">Découvrir les services</a>
           </div>
+          <div class="mt-10 grid gap-4 sm:grid-cols-2">
+            <div class="rounded-3xl bg-white/90 text-gray-900 shadow-xl p-5 backdrop-blur">
+              <p class="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Zone proximité</p>
+              <p class="mt-2 text-lg font-display font-bold">Dès CHF 25.–</p>
+              <p class="mt-2 text-sm text-gray-600">Le tarif le plus doux est réservé aux visites très proches afin d’éviter de longs trajets.</p>
+            </div>
+            <div class="rounded-3xl bg-black/40 border border-white/20 text-white p-5">
+              <p class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold">Zones & action</p>
+              <p class="mt-2 text-sm">Morges, Ouest lausannois, Lausanne & Échallens.</p>
+              <a href="#tarifs" class="mt-4 inline-flex items-center text-sm font-semibold text-white underline underline-offset-4">Voir les zones détaillées</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -382,9 +394,90 @@
     </section>
 
     <section id="contact" class="py-20 bg-white dark:bg-gray-900">
-      <div class="max-w-6xl mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-5xl font-display font-bold">Réserver une visite</h2>
-        <p class="mt-4 text-gray-600 dark:text-gray-300">Contactez Nat'Patoune pour planifier un premier rendez-vous personnalisé.</p>
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <h2 class="text-3xl md:text-5xl font-display font-bold">Réserver une visite</h2>
+          <p class="mt-4 text-gray-600 dark:text-gray-300">Contactez Nat'Patoune pour planifier un premier rendez-vous personnalisé.</p>
+        </div>
+        <div class="grid lg:grid-cols-5 gap-10">
+          <div class="lg:col-span-2 bg-lightBg dark:bg-darkBg rounded-[32px] shadow-xl p-8">
+            <h3 class="text-xl font-display font-bold mb-4">Coordonnées directes</h3>
+            <div class="space-y-4 text-sm text-gray-600 dark:text-gray-300">
+              <p class="flex items-center gap-3"><i class="fa-solid fa-phone text-primary"></i> <a href="tel:+41790000000" class="font-semibold text-gray-900 dark:text-white">+41 79 000 00 00</a></p>
+              <p class="flex items-center gap-3"><i class="fa-solid fa-envelope text-primary"></i> <a href="mailto:miaou@nat-patoune.ch" class="font-semibold text-gray-900 dark:text-white">miaou@nat-patoune.ch</a></p>
+              <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-primary"></i> Lausanne et régions proches</p>
+              <div class="rounded-2xl bg-white dark:bg-gray-900 p-4 text-sm text-gray-600 dark:text-gray-300">
+                <p class="font-semibold text-gray-900 dark:text-white">Pré-visite offerte</p>
+                <p class="mt-1">Un premier rendez-vous pour connaître votre chat, vos habitudes et vos attentes.</p>
+              </div>
+            </div>
+          </div>
+          <form class="lg:col-span-3 bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 text-left">
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <label class="text-sm font-semibold">Prénom & Nom</label>
+                <input type="text" name="name" placeholder="Votre nom complet" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent" required>
+              </div>
+              <div>
+                <label class="text-sm font-semibold">Email</label>
+                <input type="email" name="email" placeholder="vous@email.ch" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent" required>
+              </div>
+              <div>
+                <label class="text-sm font-semibold">Téléphone</label>
+                <input type="tel" name="phone" placeholder="+41 79 000 00 00" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent" required>
+              </div>
+              <div>
+                <label class="text-sm font-semibold">Commune</label>
+                <input type="text" name="city" placeholder="Morges, Lausanne..." class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent">
+              </div>
+              <div>
+                <label class="text-sm font-semibold">Nombre de chats</label>
+                <select name="cats" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3+</option>
+                </select>
+              </div>
+              <div>
+                <label class="text-sm font-semibold">Zone souhaitée</label>
+                <select name="zone" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent">
+                  <option>Zone proximité (dès 25.–)</option>
+                  <option>Zone 1</option>
+                  <option>Zone 2</option>
+                  <option>Zone 3</option>
+                </select>
+              </div>
+              <div>
+                <label class="text-sm font-semibold">Date de début</label>
+                <input type="date" name="start-date" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent">
+              </div>
+              <div>
+                <label class="text-sm font-semibold">Date de fin</label>
+                <input type="date" name="end-date" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent">
+              </div>
+            </div>
+            <div class="mt-6">
+              <label class="text-sm font-semibold">Message</label>
+              <textarea name="message" rows="4" placeholder="Décrivez vos besoins (visites, soins, habitudes...)" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent"></textarea>
+            </div>
+            <div class="mt-6 flex flex-wrap items-center gap-4 text-sm text-gray-600 dark:text-gray-300">
+              <span class="font-semibold text-gray-900 dark:text-white">Préférence de contact :</span>
+              <label class="flex items-center gap-2">
+                <input type="radio" name="contact-preference" value="telephone" class="text-primary">
+                Téléphone
+              </label>
+              <label class="flex items-center gap-2">
+                <input type="radio" name="contact-preference" value="whatsapp" class="text-primary">
+                WhatsApp
+              </label>
+              <label class="flex items-center gap-2">
+                <input type="radio" name="contact-preference" value="email" class="text-primary" checked>
+                Email
+              </label>
+            </div>
+            <button type="submit" class="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-primary text-white shadow-lg transition hover:scale-105 hover:bg-primaryDark">Envoyer la demande</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>
