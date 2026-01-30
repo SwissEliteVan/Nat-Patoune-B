@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Scripts d'optimisation d'images (déjà présents) -->
     <script class="injected-ffc2e83d85">
@@ -154,59 +155,6 @@
         }
     </style>
     
-    <!-- CONTENU DES ARTICLES DE BLOG -->
-    <script>
-        const blogArticles = [
-            {
-                id: 1,
-                title: "Pourquoi la garde à domicile réduit-elle le stress de votre chat ?",
-                category: "Bien-être",
-                image: "assets/images/garde-chat-domicile-sans-stress-vaud.webp",
-                excerpt: "La garde à domicile s'avère être une solution apaisante pour les chats, qui sont très sensibles aux changements de territoire.",
-                date: "15 mars 2024"
-            },
-            {
-                id: 2,
-                title: "Vacances tranquilles : faire garder son chat à domicile dans le canton de Vaud",
-                category: "Vacances",
-                image: "assets/images/cat-sitting-domicile-vacances-suisse.webp",
-                excerpt: "La garde à domicile dans le canton de Vaud permet de profiter de ses vacances sans se soucier de son animal.",
-                date: "10 mars 2024"
-            },
-            {
-                id: 3,
-                title: "Chat âgé ou anxieux : pourquoi le cat-sitting est indispensable",
-                category: "Soins Spécifiques",
-                image: "assets/images/cat-sitter-chat-age-anxieux-nat-patoune.webp",
-                excerpt: "Les chats âgés ont des habitudes profondément ancrées. Un changement de routine ou d'environnement peut accentuer des pathologies existantes.",
-                date: "5 mars 2024"
-            },
-            {
-                id: 4,
-                title: "L'ennui chez le chat : signes et solutions ludiques",
-                category: "Comportement",
-                image: "assets/images/galerie-chat-1.webp",
-                excerpt: "Un chat qui s'ennuie peut développer des troubles du comportement. Découvrez des jeux simples pour stimuler son instinct de chasseur.",
-                date: "28 février 2024"
-            },
-            {
-                id: 5,
-                title: "L'importance de l'hydratation et de l'alimentation humide",
-                category: "Santé",
-                image: "assets/images/galerie-chat-2.webp",
-                excerpt: "Les chats boivent naturellement peu. Pourquoi la pâtée est essentielle pour prévenir les problèmes rénaux, surtout en été.",
-                date: "22 février 2024"
-            },
-            {
-                id: 6,
-                title: "Sécuriser son balcon ou ses fenêtres : le guide pratique",
-                category: "Sécurité",
-                image: "assets/images/galerie-chat-3.webp",
-                excerpt: "Chaque année, de nombreux chats chutent. Voici les solutions efficaces et esthétiques pour protéger vos ouvertures.",
-                date: "15 février 2024"
-            }
-        ];
-    </script>
 </head>
 
 <body class="bg-cream text-text font-sans">
@@ -498,29 +446,326 @@
         </div>
     </section>
 
+    <!-- Espace Propriétaires -->
+    <section id="espace-proprietaires" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block bg-primary/10 text-primary font-medium px-4 py-1.5 rounded-full mb-4">Protocoles de sérénité</span>
+                <h2 class="text-4xl lg:text-5xl font-display font-bold mb-6">Espace <span class="text-primary">Propriétaires</span></h2>
+                <p class="text-lg text-textLight max-w-2xl mx-auto">
+                    Deux checklists claires pour préparer chaque visite, garantir la sécurité du domicile 
+                    et préserver les habitudes de votre chat.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-10">
+                <div class="bg-cream/70 rounded-card p-8 border border-secondary/20 shadow-card reveal">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-soft">
+                            <i class="fa-solid fa-house text-primary"></i>
+                        </span>
+                        <h3 class="text-2xl font-display font-bold">Protocole Habitat</h3>
+                    </div>
+                    <ul class="space-y-4" data-checklist>
+                        <li class="flex items-start gap-3">
+                            <button type="button" class="check-toggle mt-0.5 flex h-5 w-5 items-center justify-center rounded-sm border border-textLight text-textLight">
+                                <i class="fa-solid fa-check text-[10px] opacity-0"></i>
+                            </button>
+                            <span class="check-text text-textLight">Gestion des clés et accès sécurisés pour chaque passage.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <button type="button" class="check-toggle mt-0.5 flex h-5 w-5 items-center justify-center rounded-sm border border-textLight text-textLight">
+                                <i class="fa-solid fa-check text-[10px] opacity-0"></i>
+                            </button>
+                            <span class="check-text text-textLight">Relevé du courrier et mise à l’abri des éléments sensibles.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <button type="button" class="check-toggle mt-0.5 flex h-5 w-5 items-center justify-center rounded-sm border border-textLight text-textLight">
+                                <i class="fa-solid fa-check text-[10px] opacity-0"></i>
+                            </button>
+                            <span class="check-text text-textLight">Arrosage des plantes selon un planning défini.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <button type="button" class="check-toggle mt-0.5 flex h-5 w-5 items-center justify-center rounded-sm border border-textLight text-textLight">
+                                <i class="fa-solid fa-check text-[10px] opacity-0"></i>
+                            </button>
+                            <span class="check-text text-textLight">Gestion des déchets pour un intérieur sain et discret.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <button type="button" class="check-toggle mt-0.5 flex h-5 w-5 items-center justify-center rounded-sm border border-textLight text-textLight">
+                                <i class="fa-solid fa-check text-[10px] opacity-0"></i>
+                            </button>
+                            <span class="check-text text-textLight">Sécurité des fenêtres, balcons et points d’accès.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-cream/70 rounded-card p-8 border border-secondary/20 shadow-card reveal delay-100">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-soft">
+                            <i class="fa-solid fa-paw text-primary"></i>
+                        </span>
+                        <h3 class="text-2xl font-display font-bold">Protocole Félin</h3>
+                    </div>
+                    <ul class="space-y-4" data-checklist>
+                        <li class="flex items-start gap-3">
+                            <button type="button" class="check-toggle mt-0.5 flex h-5 w-5 items-center justify-center rounded-sm border border-textLight text-textLight">
+                                <i class="fa-solid fa-check text-[10px] opacity-0"></i>
+                            </button>
+                            <span class="check-text text-textLight">Suivi santé, traitements et observations quotidiennes.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <button type="button" class="check-toggle mt-0.5 flex h-5 w-5 items-center justify-center rounded-sm border border-textLight text-textLight">
+                                <i class="fa-solid fa-check text-[10px] opacity-0"></i>
+                            </button>
+                            <span class="check-text text-textLight">Stocks de nourriture, friandises et eau fraîche disponibles.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <button type="button" class="check-toggle mt-0.5 flex h-5 w-5 items-center justify-center rounded-sm border border-textLight text-textLight">
+                                <i class="fa-solid fa-check text-[10px] opacity-0"></i>
+                            </button>
+                            <span class="check-text text-textLight">Habitudes de litière respectées et nettoyage programmé.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <button type="button" class="check-toggle mt-0.5 flex h-5 w-5 items-center justify-center rounded-sm border border-textLight text-textLight">
+                                <i class="fa-solid fa-check text-[10px] opacity-0"></i>
+                            </button>
+                            <span class="check-text text-textLight">Contacts d’urgence vétérinaire et personne de confiance.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Blog Section -->
     <section id="blog" class="py-20 bg-cream">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16 reveal">
-                <span class="inline-block bg-secondary/20 text-secondaryDark font-medium px-4 py-1.5 rounded-full mb-4">Conseils experts</span>
+                <span class="inline-block bg-primary/10 text-primary font-medium px-4 py-1.5 rounded-full mb-4">Le guide du chat heureux</span>
                 <h2 class="text-4xl lg:text-5xl font-display font-bold mb-6">Le blog <span class="text-primary">Nat'Patoune</span></h2>
                 <p class="text-lg text-textLight max-w-2xl mx-auto">
-                    Découvrez mes conseils pour le bien-être de votre chat, basés sur l'expérience et l'éthologie féline.
+                    Des articles précis et bienveillants pour préparer chaque absence avec méthode, 
+                    et accompagner votre chat avec justesse.
                 </p>
             </div>
-            
-            <div id="blog-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Les articles seront générés dynamiquement par JavaScript -->
-            </div>
-            
-            <div class="text-center mt-12 reveal delay-350">
-                <a href="#blog-archive" class="inline-flex items-center text-primary font-medium hover:text-primaryDark">
-                    <span>Voir tous les articles</span>
-                    <span class="material-symbols-outlined ml-2">arrow_forward</span>
-                </a>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white rounded-card overflow-hidden shadow-card hover:shadow-hover transition-all duration-300 reveal">
+                    <div class="aspect-video bg-gray-100 relative">
+                        <img src="assets/img/garde-chat-domicile-sans-stress-vaud.webp" alt="La psychologie du territoire : Pourquoi rester chez soi ?" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Territoire</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display font-bold mb-3">La psychologie du territoire : Pourquoi rester chez soi ?</h3>
+                        <p class="text-textLight mb-4">Comprendre le rôle du territoire pour rassurer un chat et préserver ses repères.</p>
+                        <button type="button" data-modal-target="article-1" class="text-primary font-medium hover:text-primaryDark inline-flex items-center gap-2">
+                            <span>Lire l’article</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-card overflow-hidden shadow-card hover:shadow-hover transition-all duration-300 reveal delay-100">
+                    <div class="aspect-video bg-gray-100 relative">
+                        <img src="assets/img/cat-sitting-domicile-vacances-suisse.webp" alt="Check-list ultime pour un départ en vacances serein" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Organisation</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display font-bold mb-3">Check-list ultime pour un départ en vacances serein</h3>
+                        <p class="text-textLight mb-4">Les points clés à préparer pour des visites fluides et rassurantes.</p>
+                        <button type="button" data-modal-target="article-2" class="text-primary font-medium hover:text-primaryDark inline-flex items-center gap-2">
+                            <span>Lire l’article</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-card overflow-hidden shadow-card hover:shadow-hover transition-all duration-300 reveal delay-200">
+                    <div class="aspect-video bg-gray-100 relative">
+                        <img src="assets/img/chaton-cache-couverture.webp" alt="Gagner la confiance d'un chat timide : ma méthode" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Comportement</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display font-bold mb-3">Gagner la confiance d'un chat timide : ma méthode</h3>
+                        <p class="text-textLight mb-4">Une approche douce et progressive pour instaurer un lien durable.</p>
+                        <button type="button" data-modal-target="article-3" class="text-primary font-medium hover:text-primaryDark inline-flex items-center gap-2">
+                            <span>Lire l’article</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-card overflow-hidden shadow-card hover:shadow-hover transition-all duration-300 reveal">
+                    <div class="aspect-video bg-gray-100 relative">
+                        <img src="assets/img/galerie-chat-1.webp" alt="Santé : L'importance de l'hydratation en été" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Santé</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display font-bold mb-3">Santé : L'importance de l'hydratation en été</h3>
+                        <p class="text-textLight mb-4">Préserver l’équilibre hydrique et limiter les risques liés à la chaleur.</p>
+                        <button type="button" data-modal-target="article-4" class="text-primary font-medium hover:text-primaryDark inline-flex items-center gap-2">
+                            <span>Lire l’article</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-card overflow-hidden shadow-card hover:shadow-hover transition-all duration-300 reveal delay-100">
+                    <div class="aspect-video bg-gray-100 relative">
+                        <img src="assets/img/logo-natpatoune.jpg" alt="Vigilance Domicile : sécuriser son habitat en son absence" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Sécurité</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display font-bold mb-3">Vigilance Domicile : sécuriser son habitat en son absence</h3>
+                        <p class="text-textLight mb-4">Des gestes simples pour un logement sûr et discret pendant les visites.</p>
+                        <button type="button" data-modal-target="article-5" class="text-primary font-medium hover:text-primaryDark inline-flex items-center gap-2">
+                            <span>Lire l’article</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </button>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-card overflow-hidden shadow-card hover:shadow-hover transition-all duration-300 reveal delay-200">
+                    <div class="aspect-video bg-gray-100 relative">
+                        <img src="assets/img/nathalie-profil.webp" alt="Comprendre les besoins du chat senior à domicile" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">Senior</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-display font-bold mb-3">Comprendre les besoins du chat senior à domicile</h3>
+                        <p class="text-textLight mb-4">Adapter le rythme des visites pour un confort optimal.</p>
+                        <button type="button" data-modal-target="article-6" class="text-primary font-medium hover:text-primaryDark inline-flex items-center gap-2">
+                            <span>Lire l’article</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </button>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
+
+    <!-- Modales Blog -->
+    <div id="article-1" class="modal fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4">
+        <div class="max-w-2xl w-full bg-white rounded-card p-8 shadow-hover relative">
+            <button type="button" data-modal-close class="absolute top-4 right-4 h-10 w-10 border border-text rounded-full flex items-center justify-center text-text hover:bg-text hover:text-white transition-all">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="mb-6">
+                <p class="text-sm uppercase tracking-widest text-primary font-medium">Territoire</p>
+                <h3 class="text-3xl font-display font-bold mt-2">La psychologie du territoire : Pourquoi rester chez soi ?</h3>
+            </div>
+            <p class="text-textLight leading-relaxed">
+                Le chat est un animal profondément territorial. Son bien-être dépend de repères stables : odeurs familières, 
+                cheminements connus, cachettes sécurisantes. Lors d’une absence, le maintien du territoire réduit le stress, 
+                préserve l’appétit et limite les comportements de retrait. À domicile, la visite s’appuie sur des rituels 
+                simples : approche douce, respect des distances, et observation attentive des signaux. Les objets du quotidien 
+                deviennent des appuis émotionnels, tandis que les routines de jeux ou de repas sécurisent le rythme. 
+                Cette continuité évite l’hypervigilance et favorise une présence sereine, même en l’absence de ses humains. 
+                En gardant votre chat chez lui, vous choisissez la solution la plus respectueuse de sa sensibilité.
+            </p>
+        </div>
+    </div>
+
+    <div id="article-2" class="modal fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4">
+        <div class="max-w-2xl w-full bg-white rounded-card p-8 shadow-hover relative">
+            <button type="button" data-modal-close class="absolute top-4 right-4 h-10 w-10 border border-text rounded-full flex items-center justify-center text-text hover:bg-text hover:text-white transition-all">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="mb-6">
+                <p class="text-sm uppercase tracking-widest text-primary font-medium">Organisation</p>
+                <h3 class="text-3xl font-display font-bold mt-2">Check-list ultime pour un départ en vacances serein</h3>
+            </div>
+            <p class="text-textLight leading-relaxed">
+                Une préparation claire est la clé d’un séjour sans imprévus. Avant le départ, vérifiez les quantités de 
+                nourriture, la disponibilité d’eau fraîche et l’état de la litière. Regroupez traitements, carnet vétérinaire 
+                et consignes spécifiques dans un dossier facilement accessible. Indiquez les habitudes de votre chat : heures 
+                de repas, jeux favoris, zones de repos. Pensez aussi à la maison : clés fiables, fenêtres sécurisées, 
+                plantes arrosées et courrier géré. Une checklist partagée permet de maintenir un rythme constant et d’assurer 
+                des visites efficaces. Résultat : votre chat reste serein, et vous profitez de vos vacances l’esprit léger.
+            </p>
+        </div>
+    </div>
+
+    <div id="article-3" class="modal fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4">
+        <div class="max-w-2xl w-full bg-white rounded-card p-8 shadow-hover relative">
+            <button type="button" data-modal-close class="absolute top-4 right-4 h-10 w-10 border border-text rounded-full flex items-center justify-center text-text hover:bg-text hover:text-white transition-all">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="mb-6">
+                <p class="text-sm uppercase tracking-widest text-primary font-medium">Comportement</p>
+                <h3 class="text-3xl font-display font-bold mt-2">Gagner la confiance d'un chat timide : ma méthode</h3>
+            </div>
+            <p class="text-textLight leading-relaxed">
+                Un chat timide a besoin de temps et d’une approche très progressive. La première étape consiste à respecter 
+                sa distance et à éviter toute interaction forcée. Je privilégie les mouvements lents, un ton de voix doux 
+                et des pauses d’observation pour l’inviter à sortir sans pression. Les friandises déposées à proximité de 
+                sa cachette créent une association positive, tandis que les jeux à distance stimulent sa curiosité. 
+                Chaque visite renforce la prévisibilité, ce qui diminue l’anxiété. Progressivement, le chat choisit 
+                lui-même le contact, signe d’une confiance installée. Cette méthode respecte son rythme et garantit 
+                une relation durable et apaisée.
+            </p>
+        </div>
+    </div>
+
+    <div id="article-4" class="modal fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4">
+        <div class="max-w-2xl w-full bg-white rounded-card p-8 shadow-hover relative">
+            <button type="button" data-modal-close class="absolute top-4 right-4 h-10 w-10 border border-text rounded-full flex items-center justify-center text-text hover:bg-text hover:text-white transition-all">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="mb-6">
+                <p class="text-sm uppercase tracking-widest text-primary font-medium">Santé</p>
+                <h3 class="text-3xl font-display font-bold mt-2">Santé : L'importance de l'hydratation en été</h3>
+            </div>
+            <p class="text-textLight leading-relaxed">
+                En période chaude, l’hydratation devient un enjeu majeur pour la santé féline. Les chats boivent peu par 
+                nature, ce qui peut favoriser des troubles urinaires ou rénaux. À domicile, il est essentiel de multiplier 
+                les points d’eau et de renouveler fréquemment les bols pour conserver une eau fraîche. L’ajout d’une 
+                alimentation humide ou de bouillon adapté stimule l’apport hydrique. Lors des visites, j’observe la 
+                fréquence de boisson, l’appétit et le niveau d’énergie. Ces signes permettent d’agir rapidement en cas 
+                de fatigue ou de chaleur excessive. Une bonne hydratation protège le confort et la vitalité de votre chat.
+            </p>
+        </div>
+    </div>
+
+    <div id="article-5" class="modal fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4">
+        <div class="max-w-2xl w-full bg-white rounded-card p-8 shadow-hover relative">
+            <button type="button" data-modal-close class="absolute top-4 right-4 h-10 w-10 border border-text rounded-full flex items-center justify-center text-text hover:bg-text hover:text-white transition-all">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="mb-6">
+                <p class="text-sm uppercase tracking-widest text-primary font-medium">Sécurité</p>
+                <h3 class="text-3xl font-display font-bold mt-2">Vigilance Domicile : sécuriser son habitat en son absence</h3>
+            </div>
+            <p class="text-textLight leading-relaxed">
+                La sécurité du domicile contribue à la sérénité générale. Avant le départ, vérifiez les verrouillages 
+                des fenêtres et l’état des moustiquaires, surtout si votre chat a accès à un balcon. Rangez les objets 
+                fragiles ou les câbles susceptibles d’être mordillés. Les lumières programmées et un voisin de confiance 
+                peuvent renforcer la discrétion de l’absence. Lors des visites, je contrôle les accès, relève le courrier 
+                et m’assure que rien n’a été déplacé. Cette vigilance régulière protège votre habitat tout en offrant 
+                un environnement stable à votre chat.
+            </p>
+        </div>
+    </div>
+
+    <div id="article-6" class="modal fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4">
+        <div class="max-w-2xl w-full bg-white rounded-card p-8 shadow-hover relative">
+            <button type="button" data-modal-close class="absolute top-4 right-4 h-10 w-10 border border-text rounded-full flex items-center justify-center text-text hover:bg-text hover:text-white transition-all">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="mb-6">
+                <p class="text-sm uppercase tracking-widest text-primary font-medium">Senior</p>
+                <h3 class="text-3xl font-display font-bold mt-2">Comprendre les besoins du chat senior à domicile</h3>
+            </div>
+            <p class="text-textLight leading-relaxed">
+                Le chat senior apprécie la stabilité et des gestes adaptés à son âge. Les articulations peuvent être 
+                sensibles, l’appétit fluctuer et les temps de repos s’allonger. À domicile, il est important d’aménager 
+                des zones de couchage accessibles et de maintenir des repas réguliers. Pendant les visites, je privilégie 
+                des interactions calmes, un brossage doux et une observation attentive des déplacements. Les changements 
+                subtils de comportement ou d’appétit sont notés afin d’anticiper un besoin vétérinaire. Cette approche 
+                personnalisée permet au chat senior de rester confortable dans son environnement familier.
+            </p>
+        </div>
+    </div>
 
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gradient-to-br from-primary/5 via-secondary/5 to-cream">
@@ -641,6 +886,47 @@
         </div>
     </section>
 
+    <!-- Newsletter -->
+    <section id="newsletter" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="bg-cream/70 rounded-card p-8 lg:p-12 border border-secondary/20 shadow-card flex flex-col lg:flex-row items-center justify-between gap-6">
+                <div>
+                    <p class="text-sm uppercase tracking-widest text-primary font-medium">Guide PDF</p>
+                    <h3 class="text-3xl font-display font-bold mt-2">10 astuces professionnelles</h3>
+                    <p class="text-textLight mt-2 max-w-xl">
+                        Recevez un guide clair pour préparer votre absence et maintenir le confort de votre chat.
+                    </p>
+                </div>
+                <form id="newsletter-form" class="flex flex-col sm:flex-row gap-4 w-full lg:w-auto">
+                    <label class="sr-only" for="newsletter-email">Email</label>
+                    <input id="newsletter-email" type="email" required placeholder="Votre email"
+                           class="w-full sm:w-72 px-4 py-3 border border-gray-200 rounded-input focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all bg-white">
+                    <button type="submit" class="bg-primary text-white px-6 py-3 rounded-btn font-medium hover:bg-primaryDark transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane text-sm"></i>
+                        <span>Recevoir le guide</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pop-up fidélité -->
+    <div id="loyalty-popup" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 p-4">
+        <div class="bg-white rounded-card p-8 shadow-hover max-w-md w-full relative text-center">
+            <button type="button" data-popup-close class="absolute top-4 right-4 h-10 w-10 border border-text rounded-full flex items-center justify-center text-text hover:bg-text hover:text-white transition-all">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <p class="text-sm uppercase tracking-widest text-primary font-medium">Offre fidélité</p>
+            <h3 class="text-2xl font-display font-bold mt-3">11ème visite offerte</h3>
+            <p class="text-textLight mt-3">
+                Cumulez vos visites et profitez d’une session offerte pour remercier votre confiance.
+            </p>
+            <button type="button" data-popup-close class="mt-6 w-full border border-text text-text py-3 rounded-btn font-medium hover:bg-text hover:text-white transition-all">
+                Fermer
+            </button>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-text text-white py-12">
         <div class="container mx-auto px-4">
@@ -743,33 +1029,100 @@
         
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
         
-        // Génération des articles de blog
-        const blogContainer = document.getElementById('blog-container');
-        if (blogContainer && blogArticles) {
-            blogArticles.forEach(article => {
-                const articleHTML = `
-                    <div class="bg-white rounded-card overflow-hidden shadow-card hover:shadow-hover transition-all duration-300 reveal">
-                        <div class="aspect-video bg-gray-100 relative">
-                            <img src="${article.image}" alt="${article.title}" class="w-full h-full object-cover">
-                            <span class="absolute top-3 left-3 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">${article.category}</span>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-display font-bold mb-3 line-clamp-2">${article.title}</h3>
-                            <p class="text-textLight mb-4 line-clamp-3">${article.excerpt}</p>
-                            <div class="flex justify-between items-center">
-                                <span class="text-sm text-textLight">${article.date}</span>
-                                <a href="#article-${article.id}" class="text-primary font-medium hover:text-primaryDark flex items-center">
-                                    <span>Lire</span>
-                                    <span class="material-symbols-outlined ml-1 text-lg">arrow_forward</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                blogContainer.innerHTML += articleHTML;
+        // Modales blog
+        const modalTriggers = document.querySelectorAll('[data-modal-target]');
+        const modalCloseButtons = document.querySelectorAll('[data-modal-close]');
+
+        const closeModal = (modal) => {
+            if (!modal) return;
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        };
+
+        modalTriggers.forEach(trigger => {
+            trigger.addEventListener('click', () => {
+                const targetId = trigger.getAttribute('data-modal-target');
+                const modal = document.getElementById(targetId);
+                if (modal) {
+                    modal.classList.remove('hidden');
+                    modal.classList.add('flex');
+                    document.body.style.overflow = 'hidden';
+                }
+            });
+        });
+
+        modalCloseButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                closeModal(button.closest('.modal'));
+            });
+        });
+
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    closeModal(modal);
+                }
+            });
+        });
+
+        // Checklists interactives
+        document.querySelectorAll('[data-checklist] .check-toggle').forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const icon = toggle.querySelector('i');
+                const text = toggle.closest('li').querySelector('.check-text');
+                toggle.classList.toggle('border-primary');
+                toggle.classList.toggle('text-primary');
+                if (icon) {
+                    icon.classList.toggle('opacity-0');
+                }
+                if (text) {
+                    text.classList.toggle('line-through');
+                    text.classList.toggle('text-gray-400');
+                }
+            });
+        });
+
+        // Newsletter
+        const newsletterForm = document.getElementById('newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const emailInput = document.getElementById('newsletter-email');
+                if (emailInput && emailInput.value) {
+                    alert('Merci, votre guide PDF vous sera envoyé rapidement.');
+                    newsletterForm.reset();
+                }
             });
         }
-        
+
+        // Pop-up fidélité
+        const loyaltyPopup = document.getElementById('loyalty-popup');
+        const loyaltyCloseButtons = document.querySelectorAll('[data-popup-close]');
+        if (loyaltyPopup) {
+            setTimeout(() => {
+                loyaltyPopup.classList.remove('hidden');
+                loyaltyPopup.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            }, 1200);
+        }
+        loyaltyCloseButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                loyaltyPopup.classList.add('hidden');
+                loyaltyPopup.classList.remove('flex');
+                document.body.style.overflow = '';
+            });
+        });
+        if (loyaltyPopup) {
+            loyaltyPopup.addEventListener('click', (event) => {
+                if (event.target === loyaltyPopup) {
+                    loyaltyPopup.classList.add('hidden');
+                    loyaltyPopup.classList.remove('flex');
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+
         // Gestion du formulaire de contact
         const contactForm = document.getElementById('contact-form');
         if (contactForm) {
