@@ -1,712 +1,864 @@
 <!DOCTYPE html>
 <html lang="fr" class="scroll-smooth">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nat'Patoune - Garde de chats</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            primary: '#8F78D3',
-            secondary: '#E8AEC3',
-            primaryDark: '#705eb0',
-            lightBg: '#FBF9F4',
-            darkBg: '#1A1A1A'
-          },
-          fontFamily: {
-            display: ['Montserrat', 'sans-serif'],
-            body: ['Roboto', 'sans-serif']
-          },
-          boxShadow: {
-            soft: '0 16px 40px rgba(143, 120, 211, 0.15)'
-          }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nat'Patoune - Garde de chats Premium Vaud</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+    
+    <!-- Scripts d'optimisation d'images (déjà présents) -->
+    <script class="injected-ffc2e83d85">
+    (function(){'use strict';function q(b){var c=0;return function(){return c<b.length?{done:!1,value:b[c++]}:{done:!0}}}function t(b){var c=typeof Symbol!="undefined"&&Symbol.iterator&&b[Symbol.iterator];if(c)return c.call(b);if(typeof b.length=="number")return{next:q(b)};throw Error(String(b)+" is not an iterable or ArrayLike");}var u=typeof Object.defineProperties=="function"?Object.defineProperty:function(b,c,g){if(b==Array.prototype||b==Object.prototype)return b;b[c]=g.value;return b};
+    function v(b){b=["object"==typeof globalThis&&globalThis,b,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var c=0;c<b.length;++c){var g=b[c];if(g&&g.Math==Math)return g}throw Error("Cannot find global object");}var w=v(this);function x(b,c){if(c)a:{var g=w;b=b.split(".");for(var h=0;h<b.length-1;h++){var l=b[h];if(!(l in g))break a;g=g[l]}b=b[b.length-1];h=g[b];c=c(h);c!=h&&c!=null&&u(g,b,{configurable:!0,writable:!0,value:c})}}
+    function y(){this.j=!1;this.g=null;this.u=void 0;this.h=1;this.v=this.l=0;this.i=null}function z(b){if(b.j)throw new TypeError("Generator is already running");b.j=!0}y.prototype.o=function(b){this.u=b};function A(b,c){b.i={I:c,J:!0};b.h=b.l||b.v}y.prototype.return=function(b){this.i={return:b};this.h=this.v};function B(b){this.g=new y;this.h=b}function E(b,c){z(b.g);var g=b.g.g;if(g)return F(b,"return"in g?g["return"]:function(h){return{value:h,done:!0}},c,b.g.return);b.g.return(c);return G(b)}
+    function F(b,c,g,h){try{var l=c.call(b.g.g,g);if(!(l instanceof Object))throw new TypeError("Iterator result "+l+" is not an object");if(!l.done)return b.g.j=!1,l;var m=l.value}catch(f){return b.g.g=null,A(b.g,f),G(b)}b.g.g=null;h.call(b.g,m);return G(b)}function G(b){for(;b.g.h;)try{var c=b.h(b.g);if(c)return b.g.j=!1,{value:c.value,done:!1}}catch(g){b.g.u=void 0,A(b.g,g)}b.g.j=!1;if(b.g.i){c=b.g.i;b.g.i=null;if(c.J)throw c.I;return{value:c.return,done:!0}}return{value:void 0,done:!0}}
+    function H(b){this.next=function(c){z(b.g);b.g.g?c=F(b,b.g.g.next,c,b.g.o):(b.g.o(c),c=G(b));return c};this.throw=function(c){z(b.g);b.g.g?c=F(b,b.g.g["throw"],c,b.g.o):(A(b.g,c),c=G(b));return c};this.return=function(c){return E(b,c)};this[Symbol.iterator]=function(){return this}}function I(b){function c(h){return b.next(h)}function g(h){return b.throw(h)}return new Promise(function(h,l){function m(f){f.done?h(f.value):Promise.resolve(f.value).then(c,g).then(m,l)}m(b.next())})}
+    x("Symbol",function(b){function c(m){if(this instanceof c)throw new TypeError("Symbol is not a constructor");return new g(h+(m||"")+"_"+l++,m)}function g(m,f){this.g=m;u(this,"description",{configurable:!0,writable:!0,value:f})}if(b)return b;g.prototype.toString=function(){return this.g};var h="jscomp_symbol_"+(Math.random()*1E9>>>0)+"_",l=0;return c});
+    x("Symbol.iterator",function(b){if(b)return b;b=Symbol("Symbol.iterator");u(Array.prototype,b,{configurable:!0,writable:!0,value:function(){return J(q(this))}});return b});function J(b){b={next:b};b[Symbol.iterator]=function(){return this};return b}
+    x("Promise",function(b){function c(f){this.h=0;this.i=void 0;this.g=[];this.u=!1;var a=this.j();try{f(a.resolve,a.reject)}catch(d){a.reject(d)}}function g(){this.g=null}function h(f){return f instanceof c?f:new c(function(a){a(f)})}if(b)return b;g.prototype.h=function(f){if(this.g==null){this.g=[];var a=this;this.i(function(){a.l()})}this.g.push(f)};var l=w.setTimeout;g.prototype.i=function(f){l(f,0)};g.prototype.l=function(){for(;this.g&&this.g.length;){var f=this.g;this.g=[];for(var a=0;a<f.length;++a){var d=
+    f[a];f[a]=null;try{d()}catch(e){this.j(e)}}}this.g=null};g.prototype.j=function(f){this.i(function(){throw f;})};c.prototype.j=function(){function f(e){return function(k){d||(d=!0,e.call(a,k))}}var a=this,d=!1;return{resolve:f(this.D),reject:f(this.l)}};c.prototype.D=function(f){if(f===this)this.l(new TypeError("A Promise cannot resolve to itself"));else if(f instanceof c)this.G(f);else{a:switch(typeof f){case "object":var a=f!=null;break a;case "function":a=!0;break a;default:a=!1}a?this.C(f):this.o(f)}};
+    c.prototype.C=function(f){var a=void 0;try{a=f.then}catch(d){this.l(d);return}typeof a=="function"?this.H(a,f):this.o(f)};c.prototype.l=function(f){this.v(2,f)};c.prototype.o=function(f){this.v(1,f)};c.prototype.v=function(f,a){if(this.h!=0)throw Error("Cannot settle("+f+", "+a+"): Promise already settled in state"+this.h);this.h=f;this.i=a;this.h===2&&this.F();this.K()};c.prototype.F=function(){var f=this;l(function(){if(f.B()){var a=w.console;typeof a!=="undefined"&&a.error(f.i)}},1)};c.prototype.B=
+    function(){if(this.u)return!1;var f=w.CustomEvent,a=w.Event,d=w.dispatchEvent;if(typeof d==="undefined")return!0;typeof f==="function"?f=new f("unhandledrejection",{cancelable:!0}):typeof a==="function"?f=new a("unhandledrejection",{cancelable:!0}):(f=w.document.createEvent("CustomEvent"),f.initCustomEvent("unhandledrejection",!1,!0,f));f.promise=this;f.reason=this.i;return d(f)};c.prototype.K=function(){if(this.g!=null){for(var f=0;f<this.g.length;++f)m.h(this.g[f]);this.g=null}};var m=new g;c.prototype.G=
+    function(f){var a=this.j();f.A(a.resolve,a.reject)};c.prototype.H=function(f,a){var d=this.j();try{f.call(a,d.resolve,d.reject)}catch(e){d.reject(e)}};c.prototype.then=function(f,a){function d(n,r){return typeof n=="function"?function(C){try{e(n(C))}catch(D){k(D)}}:r}var e,k,p=new c(function(n,r){e=n;k=r});this.A(d(f,e),d(a,k));return p};c.prototype.catch=function(f){return this.then(void 0,f)};c.prototype.A=function(f,a){function d(){switch(e.h){case 1:f(e.i);break;case 2:a(e.i);break;default:throw Error("Unexpected state: "+
+    e.h);}}var e=this;this.g==null?m.h(d):this.g.push(d);this.u=!0};c.resolve=h;c.reject=function(f){return new c(function(a,d){d(f)})};c.race=function(f){return new c(function(a,d){for(var e=t(f),k=e.next();!k.done;k=e.next())h(k.value).A(a,d)})};c.all=function(f){var a=t(f),d=a.next();return d.done?h([]):new c(function(e,k){function p(C){return function(D){n[C]=D;r--;r==0&&e(n)}}var n=[],r=0;do n.push(void 0),r++,h(d.value).A(p(n.length-1),k),d=a.next();while(!d.done)})};return c});
+    function K(b,c){return Object.prototype.hasOwnProperty.call(b,c)}x("Object.is",function(b){return b?b:function(c,g){return c===g?c!==0||1/c===1/g:c!==c&&g!==g}});x("Array.prototype.includes",function(b){return b?b:function(c,g){var h=this;h instanceof String&&(h=String(h));var l=h.length;g=g||0;for(g<0&&(g=Math.max(g+l,0));g<l;g++){var m=h[g];if(m===c||Object.is(m,c))return!0}return!1}});
+    x("String.prototype.includes",function(b){return b?b:function(c,g){if(this==null)throw new TypeError("The 'this' value for String.prototype.includes must not be null or undefined");if(c instanceof RegExp)throw new TypeError("First argument to String.prototype.includes must not be a regular expression");return this.indexOf(c,g||0)!==-1}});
+    x("WeakMap",function(b){function c(d){this.g=(a+=Math.random()+1).toString();if(d){d=t(d);for(var e;!(e=d.next()).done;)e=e.value,this.set(e[0],e[1])}}function g(){}function h(d){var e=typeof d;return e==="object"&&d!==null||e==="function"}function l(d){if(!K(d,f)){var e=new g;u(d,f,{value:e})}}function m(d){var e=Object[d];e&&(Object[d]=function(k){if(k instanceof g)return k;Object.isExtensible(k)&&l(k);return e(k)})}if(function(){if(!b||!Object.seal)return!1;try{var d=Object.seal({}),e=Object.seal({}),
+    k=new b([[d,2],[e,3]]);if(k.get(d)!=2||k.get(e)!=3)return!1;k.delete(d);k.set(e,4);return!k.has(d)&&k.get(e)==4}catch(p){return!1}}())return b;var f="$jscomp_hidden_"+Math.random();m("freeze");m("preventExtensions");m("seal");var a=0;c.prototype.set=function(d,e){if(!h(d))throw Error("Invalid WeakMap key");l(d);if(!K(d,f))throw Error("WeakMap key fail: "+d);d[f][this.g]=e;return this};c.prototype.get=function(d){return h(d)&&K(d,f)?d[f][this.g]:void 0};c.prototype.has=function(d){return h(d)&&K(d,
+    f)&&K(d[f],this.g)};c.prototype.delete=function(d){return h(d)&&K(d,f)&&K(d[f],this.g)?delete d[f][this.g]:!1};return c});
+    x("Map",function(b){function c(){var a={};return a.m=a.next=a.head=a}function g(a,d){var e=a[1];return J(function(){if(e){for(;e.head!=a[1];)e=e.m;for(;e.next!=e.head;)return e=e.next,{done:!1,value:d(e)};e=null}return{done:!0,value:void 0}})}function h(a,d){var e=d&&typeof d;e=="object"||e=="function"?m.has(d)?e=m.get(d):(e=""+ ++f,m.set(d,e)):e="p_"+d;var k=a[0][e];if(k&&K(a[0],e))for(a=0;a<k.length;a++){var p=k[a];if(d!==d&&p.key!==p.key||d===p.key)return{id:e,list:k,index:a,entry:p}}return{id:e,
+    list:k,index:-1,entry:void 0}}function l(a){this[0]={};this[1]=c();this.size=0;if(a){a=t(a);for(var d;!(d=a.next()).done;)d=d.value,this.set(d[0],d[1])}}if(function(){if(!b||typeof b!="function"||!b.prototype.entries||typeof Object.seal!="function")return!1;try{var a=Object.seal({x:4}),d=new b(t([[a,"s"]]));if(d.get(a)!="s"||d.size!=1||d.get({x:4})||d.set({x:4},"t")!=d||d.size!=2)return!1;var e=d.entries(),k=e.next();if(k.done||k.value[0]!=a||k.value[1]!="s")return!1;k=e.next();return k.done||k.value[0].x!=
+    4||k.value[1]!="t"||!e.next().done?!1:!0}catch(p){return!1}}())return b;var m=new WeakMap;l.prototype.set=function(a,d){a=a===0?0:a;var e=h(this,a);e.list||(e.list=this[0][e.id]=[]);e.entry?e.entry.value=d:(e.entry={next:this[1],m:this[1].m,head:this[1],key:a,value:d},e.list.push(e.entry),this[1].m.next=e.entry,this[1].m=e.entry,this.size++);return this};l.prototype.delete=function(a){a=h(this,a);return a.entry&&a.list?(a.list.splice(a.index,1),a.list.length||delete this[0][a.id],a.entry.m.next=a.entry.next,
+    a.entry.next.m=a.entry.m,a.entry.head=null,this.size--,!0):!1};l.prototype.clear=function(){this[0]={};this[1]=this[1].m=c();this.size=0};l.prototype.has=function(a){return!!h(this,a.entry)};l.prototype.get=function(a){return(a=h(this,a).entry)&&a.value};l.prototype.entries=function(){return g(this,function(a){return[a.key,a.value]})};l.prototype.keys=function(){return g(this,function(a){return a.key})};l.prototype.values=function(){return g(this,function(a){return a.value})};l.prototype.forEach=
+    function(a,d){for(var e=this.entries(),k;!(k=e.next()).done;)k=k.value,a.call(d,k[1],k[0],this)};l.prototype[Symbol.iterator]=l.prototype.entries;var f=0;return l});
+    x("Set",function(b){function c(g){this.g=new Map;if(g){g=t(g);for(var h;!(h=g.next()).done;)this.add(h.value)}this.size=this.g.size}if(function(){if(!b||typeof b!="function"||!b.prototype.entries||typeof Object.seal!="function")return!1;try{var g=Object.seal({x:4}),h=new b(t([g]));if(!h.has(g)||h.size!=1||h.add(g)!=h||h.size!=1||h.add({x:4})!=h||h.size!=2)return!1;var l=h.entries(),m=l.next();if(m.done||m.value[0]!=g||m.value[1]!=g)return!1;m=l.next();return m.done||m.value[0]==g||m.value[0].x!=4||
+    m.value[1]!=m.value[0]?!1:l.next().done}catch(f){return!1}}())return b;c.prototype.add=function(g){g=g===0?0:g;this.g.set(g,g);this.size=this.g.size;return this};c.prototype.delete=function(g){g=this.g.delete(g);this.size=this.g.size;return g};c.prototype.clear=function(){this.g.clear();this.size=0};c.prototype.has=function(g){return this.g.has(g)};c.prototype.entries=function(){return this.g.entries()};c.prototype.values=function(){return this.g.values()};c.prototype.keys=c.prototype.values;c.prototype[Symbol.iterator]=
+    c.prototype.values;c.prototype.forEach=function(g,h){var l=this;this.g.forEach(function(m){return g.call(h,m,m,l)})};return c});(function(){function b(){return m?Promise.resolve(m):f?f:f=fetch("https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json").then(function(a){if(!a.ok)throw Error("HTTP error! status: "+a.status+" fetching https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json");return a.json()}).then(function(a){if(!Array.isArray(a))throw new TypeError("Fetched icon names from https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json is not an array.");
+    return m=a}).catch(function(a){console.error("IconChecker: Failed to load valid icon names from https://www.gstatic.com/bard-maui/resources/material-design-icon-names.804824289.json.",a);f=null;throw a;})}function c(a){var d,e,k,p;return I(new H(new B(function(n){switch(n.h){case 1:d=(a.textContent||"").trim();if(!d||a.classList.contains("js-replaced-missing-icon")&&d==="radio_button_unchecked")return n.return();e=window.getComputedStyle(a);if(e.display==="none"||e.visibility==="hidden")return n.return();
+    n.l=2;var r=b();n.h=4;return{value:r};case 4:k=n.u;n.h=3;n.l=0;break;case 2:return n.l=0,n.i=null,console.warn('IconChecker: Skipping check for icon "'+d+'" as valid names could not be loaded.'),n.return();case 3:(p=k.includes(d))?a.classList.contains("js-replaced-missing-icon")&&a.classList.remove("js-replaced-missing-icon"):d==="radio_button_unchecked"&&a.classList.contains("js-replaced-missing-icon")||(a.textContent="radio_button_unchecked",a.classList.add("js-replaced-missing-icon")),n.h=0}})))}
+    function g(a){a=a===void 0?document.body:a;a.querySelectorAll(l).forEach(function(d){c(d)})}function h(){b().catch(function(){});document.fonts.ready.then(function(){requestAnimationFrame(function(){g(document.body);(new MutationObserver(function(a){var d=new Set;a=t(a);for(var e=a.next();!e.done;e=a.next())if(e=e.value,e.type==="childList")e.addedNodes.forEach(function(p){p.nodeType===Node.ELEMENT_NODE&&(p.matches(l)&&d.add(p),p.querySelectorAll(l).forEach(function(n){d.add(n)}))});else if(e.type===
+    "attributes"&&e.attributeName==="class"){var k=e.target;e.target.nodeType===Node.ELEMENT_NODE&&k.matches(l)&&d.add(k)}else e.type==="characterData"&&e.target.parentNode&&(e=e.target.parentNode,e.nodeType===Node.ELEMENT_NODE&&e.matches(l)&&d.add(e));d.size>0&&setTimeout(function(){d.forEach(function(p){c(p)})},500)})).observe(document.body,{childList:!0,subtree:!0,attributes:!0,attributeFilter:["class"],characterData:!0})})}).catch(function(a){console.error("IconChecker: Font loading error. Scanning icons anyway.",
+    a);requestAnimationFrame(function(){g(document.body)})})}var l=["material-icons","material-symbols-outlined","material-symbols-rounded","material-symbols-sharp"].map(function(a){return"."+a}).join(","),m=null,f=null;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",function(){h()}):h()})();}).call(this);
+    </script>
+
+    <script class="injected-ffc2e83d85">
+    const IMG_SEARCH_REPLACE_MAP = {};
+    const IMG_SEARCH_ATTRIBUTION_MAP = {};
+    const IMG_GEN_REPLACE_MAP = {
+        "soft pastel purple and pink gradient background with abstract white shapes premium style&aspect=16:9": "https://lh3.googleusercontent.com/gg-dl/ABS2GSmh5dTrObpFsRRCirmFl3CLFmPkY1YS9zA_40R8NHVY1Bot7_0loOIB8mv0DXVjzryGVEKLUCS4NWo3Y9QWK_1vqfBAHejb2Z4CH2-Kf0w4aA7nq8iS60LAGs4TcccnDvkuTY-5NjQyv8vw_Cehh-oBMHrHHEXaKiKxVUCSCk2FxwJq", 
+        "close up of a fluffy white cat receiving a gentle petting on a sofa soft lighting pastel tones&aspect=4:3": "https://lh3.googleusercontent.com/gg-dl/ABS2GSmGAXgOX5JsV6Ay5rIWtgqatnLjtgNbTuvI7IRHPdR_NmqecmwjJ9WCxdZzYekryTSIuINcHAZGbSy5e97VDwHxl5Y3y11EGRhLWRxKh8f-CHwVznLGKIdishYDbJiQzvWWYT7afgScYfQe7gV4KVDzY0KUmlNwJIa_yJqVeIGfsyOCsQ", 
+        "veterinary essentials stethoscope and cat treats on a clean pastel surface minimalist&aspect=4:3": "https://lh3.googleusercontent.com/gg-dl/ABS2GSn65IlY07FNf7UXv68P12lFqsaPZ--lZUB8uJ4Y1XtmNdqr9T9APqp31BUT8ZGxlzRJgoz7zunosIlK0Dq1kNDspg6X2HesbG1z-hIyEqJq7p6WZ16eEiRvk19DgOoNNSmvVQM2vqyan0nMqaK8AclLhuiTghFYmSKUVDRiuPBIFh9E", 
+        "modern home interior with plants and house keys on table soft sunlight security concept&aspect=4:3": "https://lh3.googleusercontent.com/gg-dl/ABS2GSn16B42IU9s7ceai2wOHCTimqW-UiBPzqqqBOgQEvT1lulTDtgCue2wjuQ81tvCPhlndnry7sxlEcAnysWVjh2SJLAbruhlhHXLskbwlupL0OE5Np_WsTO7i47fnSU_oJ-PSxen9QVen4GMabXaYog4lxF_ag5NMbGXT2H112tfxVsD-Q", 
+        "elegant gift voucher design with ribbon and cat illustration pastel pink background&aspect=16:9": "https://lh3.googleusercontent.com/gg-dl/ABS2GSkXnQ_1X1YBn4KOiKvVtXRBvs9eDw-S2BfYGUzuPelLV4TZaRp3g4f8xOuln9moo-0OZL9FooEL2lSdAwe616uykduZkCUxlmRY4w9CHjLrIGTWupt87sL6R4HV0zc9i5ZKsmwUvHOYqP8mfHXu1jUUGuItUMBCDMQIhZPw8UWRwn3_7A", 
+        "adorable cat sleeping peacefully on a plush blanket warm cozy atmosphere&aspect=4:3": "https://lh3.googleusercontent.com/gg-dl/ABS2GSnRS_XkjtQ-rxNIkEP7xsbUrrX_vYsXc8Z9wyA5svdMYigb7kGSwNV52QuPYksmZ1i9ol1Qp0yA2FFx8Gw7zCHTHejvhh_GT2G8LQM3fbGyE-x-P7LmRBOIzZDuttfIGg5AsNmhwYCobqn9y5qD3GntrBHDvehgcw241wDZqCq398ulwg", 
+        "cat looking out window with luggage in background vacation concept soft colors&aspect=4:3": "https://lh3.googleusercontent.com/gg-dl/ABS2GSlLitGTmLmxneOGhv6PtN-XomYGpjtjeRfvthSWgahUddO0wdBc-CgHuAQNDMnMPoYTiKi_yGh1yXz8nn5mqvcD3UpcA-jiLH3Vy9zSYCAm4KQ3mR4A0aFjyQbrXx56mXWtKu8SzYVrUcAFRAW_U2qxK3UOn-gn5uPW1qKZWjUTn9ZE", 
+        "senior cat resting comfortably on cushion gentle care theme&aspect=4:3": "https://lh3.googleusercontent.com/gg-dl/ABS2GSny65yqYE9lGUTA74xWCFASX_Yi9LiKuoPr8QTIUKFyQYIq0c9weZNFburvxRwUocjdCrPvWmKuy3M2DOqCO0U5Bn48hwU1fO0raDDosF9h1H5i04sHBJbtLDe6wO9SS96S40vrQuJ5NBqkvNiJn99WmRyQP3k4FYvWXtTD8II2praRCw", 
+        "portrait of a friendly professional woman smiling wearing casual chic clothes holding a cat outdoor nature background": "https://lh3.googleusercontent.com/gg-dl/ABS2GSkZHkPzdmJw49KlYqCl-RShaeRpnfn17XXLqR_b16ezo2PxCBfVJ_ePeQr_zM1lcIkvLroDLROYjY-COrEXrgbzdZ_x4z0WFAuDShfYEk5Kh9A95FKobTZtaFEWIDJ0EX7mLUSU2d88ESmOmqpMHgFULNOljfsyz6idWLMmBNKKncu1bQ", 
+        "close up portrait of a cute tabby cat with green eyes looking at camera soft focus": "https://lh3.googleusercontent.com/gg-dl/ABS2GSnqnoL0hw4FW9rLziTdEH8Kz2-b4G2-iFawR9WGMO0vk2eBNDB0T105-O8aZwaMHWLEsks_jAnpnRP1o2altXKCkHintSy_1uHlcz8WIuvhO9grUePqRSgdlSviKAvuuaDyKNIc16zdihrWws1AgKGH9ZDYIe3DPBShbv_ge-ojG4fT", 
+        "playful black and white cat chasing a feather toy dynamic pose": "https://lh3.googleusercontent.com/gg-dl/ABS2GSlp794lNcjb5EdajFHnmVpHEGo3py_ZaLxTfWzP-KMUU5oW4JJTNJx3GmX1OzoVpl7q_VVVhwRqlB37Vt0ou2Wno6tD27wk4oXZbCozhla_7FO-0wQ7DYyAJQXy5RNN416TlKj1rwiepmjLOZ8AgEjfBsERpoqdzVbHmCnUIBe_Z9v3", 
+        "fluffy persian cat sitting majestically on a velvet cushion": "https://lh3.googleusercontent.com/gg-dl/ABS2GSlU2OUdBszuUNwqGXDqWWgj7trt3SwWgYVzhSBDf5i_11bIs19_UXIfOSDEg48b-M2xEYTltPzq-yA9JXqzZExlY6qu0p4BlzSFYKW9FFGoWAveC2z449GAnSM7AspIphDiG7Bt-I9X6sjB1OXtlMuSsn97rvP5BK2H5tIIzYSK6fYr", 
+        "ginger cat sleeping curled up in a wicker basket cozy light": "https://lh3.googleusercontent.com/gg-dl/ABS2GSlfK42VNd0JkUxqyDc6n49K_eJy49ak9-_KpRbfhcBoPpPCMRD59CksMhGALn9L2mNWvzgML2yQh7Kddhw4m1Q-cRyzwt8WjrD_v4LYOEZe6OA91RxlQb5qnBmiYkeYSolIAzmW5Wg8UDt1rygAcJQ4nvRV0VuZTeijOcmb2O7vUHDg", 
+        "two cats grooming each other affectionately soft pastel background": "https://lh3.googleusercontent.com/gg-dl/ABS2GSkctSctCBHT9t77Q8UridZgryEzl4miYHKc7d5fiKOKE31vRzY3H8iOrpoNHwvKi21RC3EJNSS3iSx_JcTrsgQ7_M4V7Xh-7LLs39rkJVUOB7bJDEfOiSInRLrRvez-iKcUBxVGWkV3vSX67MJ__-ha_hjTBSfuc4PWiN91VoqeAVvU", 
+        "curious siamese cat peeking from behind a plant leaf": "https://lh3.googleusercontent.com/gg-dl/ABS2GSld8T1Mn04IdGrDgsI73aePKSdEW_ybgSJUpz5k3LKSLJdkt-J4wcvm2DmVy712M4TOCpWrVLaZe7pPLZxdaLQk-zFjfbevt-n-ADxOd_QBZ69GfGMNGBHeyzLTW-nLQPIXOc52FTrEfyfi2IVsWppcdo_F9TnX8oyimp7Mu8VcHSXOdw", 
+        "cat playing with a ball of yarn playful mood&aspect=4:3": "https://lh3.googleusercontent.com/gg-dl/ABS2GSmuAz0Buc9gyDgAmuFSGUGQHhBMksjPiqh3-CN6f--fXvFCHn0GQ1_5TqsFSEzbUf40ISx10rLxPM-s9WNZrVJNMgnidSY3DhPG6aCLIaDrBySmkiru1vcEKfuO7V8hPcL3708_0vlv2fq263E-80mo5ZzzXP8GhP28smg5WR9QEqV-", 
+        "cat eating healthy food from a bowl nutrition concept&aspect=4:3": "https://lh3.googleusercontent.com/gg-dl/ABS2GSnfyptRmzGaP9cOqdeqCKdkualbDlSKOPuyGzWKqolp9b0P0HrFa4OmRddbs-k80k5KF_W8J1rjaBUwOe-kqqA7xCz9CudIcDdaqzRohboACN7wgAoJ5i_3p3-hCEN7jZd7N_KwdTg2wvaaAWlNuJgHMbcMeTeWmBFXIn6YRpjKBG-Npg", 
+        "cat sitting on a window sill watching birds outside&aspect=4:3": "https://lh3.googleusercontent.com/gg-dl/ABS2GSmBY-fcKYcQhihiMu8ujH3SBEO-AlaQDbGl3rdKpw3AiQ3krp-8TQ5-r3DDNl4jDpQMCGUQHvCld2ZFeVp8PmIx3DSGS6HgurS5MamMEdwyIKkMH2LySxMSb_sWnrQx7nm5n0nId74KX3MKvHpha-qhXavHuVZj6kzMw43eGIVJIcrNUQ"
+    };
+    const MAY_HAVE_BACKGROUND_IMAGE = true;
+    const IMG_SEARCH_REIMAGINE_PARAM = "1";
+    </script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8F78D3',
+                        primaryDark: '#7A65B8',
+                        secondary: '#E8AEC3',
+                        secondaryDark: '#D68FA8',
+                        cream: '#FBF9F4',
+                        beige: '#F8F5EF',
+                        text: '#3A3A3A',
+                        textLight: '#6B6B6B',
+                        white: '#FFFFFF'
+                    },
+                    fontFamily: {
+                        sans: ['"Roboto"', 'sans-serif'],
+                        display: ['"Montserrat"', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'card': '22px',
+                        'btn': '18px',
+                        'input': '14px',
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 40px -10px rgba(143, 120, 211, 0.1)',
+                        'card': '0 15px 35px -5px rgba(0,0,0,0.04)',
+                        'hover': '0 25px 50px -12px rgba(143, 120, 211, 0.25)',
+                        'glow': '0 0 20px rgba(232, 174, 195, 0.3)'
+                    },
+                    animation: {
+                        'float': 'float 7s ease-in-out infinite',
+                        'fade-up': 'fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-12px)' },
+                        },
+                        fadeUp: {
+                            '0%': { opacity: 0, transform: 'translateY(24px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
-  <style>
-    .animate-infinite-scroll {
-      animation: infinite-scroll 25s linear infinite;
-    }
-    @keyframes infinite-scroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-  </style>
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #FBF9F4; }
+        ::-webkit-scrollbar-thumb { background: #E8AEC3; border-radius: 5px; border: 2px solid #FBF9F4; }
+        ::-webkit-scrollbar-thumb:hover { background: #8F78D3; }
+
+        .bg-paws {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 12c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm14 0c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zM12 24c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm26 0c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zM25 38c-5 0-9-4-9-9 0-3 1.5-5.5 4-7 1.5-1 3.5-1.5 5-1.5s3.5 0.5 5 1.5c2.5 1.5 4 4 4 7 0 5-4 9-9 9z' fill='%238F78D3' fill-opacity='0.04' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .reveal { opacity: 0; transform: translateY(24px); transition: all 1s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-350 { transition-delay: 350ms; }
+
+        body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        *:focus-visible { outline: 2px solid #8F78D3; outline-offset: 2px; }
+        
+        #download-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 9999;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        #download-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+    </style>
+    
+    <!-- CONTENU DES ARTICLES DE BLOG -->
+    <script>
+        const blogArticles = [
+            {
+                id: 1,
+                title: "Pourquoi la garde à domicile réduit-elle le stress de votre chat ?",
+                category: "Bien-être",
+                image: "assets/images/garde-chat-domicile-sans-stress-vaud.webp",
+                excerpt: "La garde à domicile s'avère être une solution apaisante pour les chats, qui sont très sensibles aux changements de territoire.",
+                date: "15 mars 2024"
+            },
+            {
+                id: 2,
+                title: "Vacances tranquilles : faire garder son chat à domicile dans le canton de Vaud",
+                category: "Vacances",
+                image: "assets/images/cat-sitting-domicile-vacances-suisse.webp",
+                excerpt: "La garde à domicile dans le canton de Vaud permet de profiter de ses vacances sans se soucier de son animal.",
+                date: "10 mars 2024"
+            },
+            {
+                id: 3,
+                title: "Chat âgé ou anxieux : pourquoi le cat-sitting est indispensable",
+                category: "Soins Spécifiques",
+                image: "assets/images/cat-sitter-chat-age-anxieux-nat-patoune.webp",
+                excerpt: "Les chats âgés ont des habitudes profondément ancrées. Un changement de routine ou d'environnement peut accentuer des pathologies existantes.",
+                date: "5 mars 2024"
+            },
+            {
+                id: 4,
+                title: "L'ennui chez le chat : signes et solutions ludiques",
+                category: "Comportement",
+                image: "assets/images/galerie-chat-1.webp",
+                excerpt: "Un chat qui s'ennuie peut développer des troubles du comportement. Découvrez des jeux simples pour stimuler son instinct de chasseur.",
+                date: "28 février 2024"
+            },
+            {
+                id: 5,
+                title: "L'importance de l'hydratation et de l'alimentation humide",
+                category: "Santé",
+                image: "assets/images/galerie-chat-2.webp",
+                excerpt: "Les chats boivent naturellement peu. Pourquoi la pâtée est essentielle pour prévenir les problèmes rénaux, surtout en été.",
+                date: "22 février 2024"
+            },
+            {
+                id: 6,
+                title: "Sécuriser son balcon ou ses fenêtres : le guide pratique",
+                category: "Sécurité",
+                image: "assets/images/galerie-chat-3.webp",
+                excerpt: "Chaque année, de nombreux chats chutent. Voici les solutions efficaces et esthétiques pour protéger vos ouvertures.",
+                date: "15 février 2024"
+            }
+        ];
+    </script>
 </head>
-<body class="bg-lightBg text-gray-800 font-body dark:bg-darkBg dark:text-gray-100">
-  <header class="fixed top-0 left-0 right-0 z-40 bg-lightBg/90 backdrop-blur shadow-sm dark:bg-darkBg/90">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="#accueil" class="flex items-center gap-3">
-        <img src="assets/img/logo-natpatoune.svg" alt="Nat'Patoune" class="h-10">
-        <span class="font-display font-bold text-lg">Nat'Patoune</span>
-      </a>
-      <nav class="hidden lg:flex items-center gap-6 font-medium">
-        <a href="#accueil" class="hover:text-primary transition">Accueil</a>
-        <a href="#services" class="hover:text-primary transition">Services</a>
-        <a href="#protocoles" class="hover:text-primary transition">Protocoles</a>
-        <a href="#tarifs" class="hover:text-primary transition">Tarifs</a>
-        <a href="#cadeau" class="hover:text-primary transition">Cadeau</a>
-        <a href="#avis" class="hover:text-primary transition">Avis</a>
-        <a href="#blog" class="hover:text-primary transition">Blog</a>
-      </nav>
-      <div class="flex items-center gap-3">
-        <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-2xl bg-primary text-white shadow-lg transition hover:scale-105 hover:bg-primaryDark">Réserver</a>
-        <button id="mobile-menu-toggle" class="lg:hidden h-10 w-10 rounded-xl border border-primary text-primary flex items-center justify-center" aria-label="Ouvrir le menu">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
-    </div>
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-primary/20 bg-lightBg dark:bg-darkBg">
-      <div class="px-4 py-4 flex flex-col gap-3 font-medium">
-        <a href="#accueil" class="hover:text-primary transition">Accueil</a>
-        <a href="#services" class="hover:text-primary transition">Services</a>
-        <a href="#protocoles" class="hover:text-primary transition">Protocoles</a>
-        <a href="#tarifs" class="hover:text-primary transition">Tarifs</a>
-        <a href="#cadeau" class="hover:text-primary transition">Cadeau</a>
-        <a href="#avis" class="hover:text-primary transition">Avis</a>
-        <a href="#blog" class="hover:text-primary transition">Blog</a>
-        <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded-2xl bg-primary text-white shadow-lg transition hover:scale-105 hover:bg-primaryDark">Réserver</a>
-      </div>
-    </div>
-  </header>
 
-  <main class="pt-24">
-    <section id="accueil" class="relative min-h-[80vh] flex items-center">
-      <video class="absolute inset-0 h-full w-full object-cover" autoplay muted loop playsinline poster="assets/img/hero-bg-cat.webp">
-        <source src="assets/img/hero.mp4" type="video/mp4">
-      </video>
-      <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 max-w-6xl mx-auto px-4 py-20 text-white">
-        <div class="max-w-2xl">
-          <p class="uppercase tracking-[0.3em] text-sm text-secondary">Garde féline premium</p>
-          <h1 class="text-4xl md:text-6xl font-display font-bold mt-4">Nat'Patoune veille sur votre chat avec douceur et rigueur.</h1>
-          <p class="mt-6 text-lg text-gray-100">Chaque visite est pensée pour le bien-être de votre compagnon et la sérénité de votre domicile.</p>
-          <div class="mt-8 flex flex-wrap gap-4">
-            <a href="#tarifs" class="inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-primary text-white shadow-lg transition hover:scale-105 hover:bg-primaryDark">Voir les tarifs</a>
-            <a href="#services" class="inline-flex items-center justify-center px-6 py-3 rounded-2xl border border-white/70 text-white shadow-lg transition hover:scale-105">Découvrir les services</a>
-          </div>
-          <div class="mt-10 grid gap-4 sm:grid-cols-2">
-            <div class="rounded-3xl bg-white/90 text-gray-900 shadow-xl p-5 backdrop-blur">
-              <p class="text-xs uppercase tracking-[0.2em] text-primary font-semibold">Zone proximité</p>
-              <p class="mt-2 text-lg font-display font-bold">Dès CHF 25.–</p>
-              <p class="mt-2 text-sm text-gray-600">Le tarif le plus doux est réservé aux visites très proches afin d’éviter de longs trajets.</p>
+<body class="bg-cream text-text font-sans">
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md z-50 border-b border-secondary/10">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="material-symbols-outlined text-primary text-2xl">pets</span>
+                <a href="#hero" class="font-display font-bold text-2xl text-primary">Nat'Patoune</a>
             </div>
-            <div class="rounded-3xl bg-black/40 border border-white/20 text-white p-5">
-              <p class="text-xs uppercase tracking-[0.2em] text-secondary font-semibold">Zones & action</p>
-              <p class="mt-2 text-sm">Morges, Ouest lausannois, Lausanne & Échallens.</p>
-              <a href="#tarifs" class="mt-4 inline-flex items-center text-sm font-semibold text-white underline underline-offset-4">Voir les zones détaillées</a>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#services" class="font-medium hover:text-primary transition-colors">Services</a>
+                <a href="#valeurs" class="font-medium hover:text-primary transition-colors">Valeurs</a>
+                <a href="#blog" class="font-medium hover:text-primary transition-colors">Blog</a>
+                <a href="#contact" class="font-medium hover:text-primary transition-colors">Contact</a>
+                <a href="#tarifs" class="bg-primary text-white px-6 py-2.5 rounded-btn font-medium hover:bg-primaryDark transition-all shadow-soft">Réserver</a>
             </div>
-          </div>
+            
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-button" class="lg:hidden text-primary">
+                <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-white z-40 transform translate-y-full transition-transform duration-300">
+            <div class="container mx-auto px-4 py-8">
+                <div class="flex justify-between items-center mb-8">
+                    <div class="flex items-center space-x-2">
+                        <span class="material-symbols-outlined text-primary text-2xl">pets</span>
+                        <span class="font-display font-bold text-2xl text-primary">Nat'Patoune</span>
+                    </div>
+                    <button id="close-mobile-menu" class="text-primary">
+                        <span class="material-symbols-outlined text-2xl">close</span>
+                    </button>
+                </div>
+                <div class="space-y-6">
+                    <a href="#services" class="block text-xl font-medium hover:text-primary transition-colors">Services</a>
+                    <a href="#valeurs" class="block text-xl font-medium hover:text-primary transition-colors">Valeurs</a>
+                    <a href="#blog" class="block text-xl font-medium hover:text-primary transition-colors">Blog</a>
+                    <a href="#contact" class="block text-xl font-medium hover:text-primary transition-colors">Contact</a>
+                    <a href="#tarifs" class="block bg-primary text-white px-6 py-3 rounded-btn font-medium hover:bg-primaryDark transition-all text-center">Réserver</a>
+                </div>
+            </div>
         </div>
-      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-24 pb-16 bg-gradient-to-br from-cream via-white to-secondary/5 bg-paws">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-fade-up">
+                    <span class="inline-block bg-secondary/20 text-secondaryDark font-medium px-4 py-1.5 rounded-full mb-4">Garde de chats premium</span>
+                    <h1 class="text-5xl lg:text-6xl font-display font-bold mb-6 leading-tight">
+                        Votre chat mérite <span class="text-primary">une présence</span> rassurante
+                    </h1>
+                    <p class="text-xl text-textLight mb-8">
+                        À Lausanne et dans le canton de Vaud, je prends soin de votre félin comme s'il était le mien. 
+                        Une alternative sereine aux pensions, dans le confort de son environnement familier.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-primary text-white px-8 py-3.5 rounded-btn font-medium hover:bg-primaryDark transition-all shadow-soft hover:shadow-hover">
+                            Réserver une visite gratuite
+                        </a>
+                        <a href="#services" class="bg-white text-primary border-2 border-primary px-8 py-3.5 rounded-btn font-medium hover:bg-primary/5 transition-all">
+                            Découvrir mes services
+                        </a>
+                    </div>
+                </div>
+                <div class="relative animate-float">
+                    <div class="relative bg-white rounded-card p-8 shadow-card">
+                        <img src="assets/images/portrait-professionnelle-chat-nat-patoune.webp" 
+                             alt="Nat'Patoune - Cat-sitter professionnelle avec un chat" 
+                             class="w-full h-auto rounded-card">
+                        <div class="absolute -bottom-6 -right-6 bg-primary text-white p-4 rounded-card shadow-hover">
+                            <span class="material-symbols-outlined block text-3xl mb-1">verified</span>
+                            <span class="font-display font-bold">Certifiée</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="services" class="py-20">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <p class="text-secondary font-medium">Services</p>
-          <h2 class="text-3xl md:text-5xl font-display font-bold mt-3">Un accompagnement complet</h2>
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-beige">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block bg-primary/10 text-primary font-medium px-4 py-1.5 rounded-full mb-4">Mes services</span>
+                <h2 class="text-4xl lg:text-5xl font-display font-bold mb-6">Une prestation <span class="text-primary">sur mesure</span></h2>
+                <p class="text-lg text-textLight max-w-2xl mx-auto">
+                    Adaptés à chaque personnalité féline, mes services garantissent bien-être et sérénité.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-card p-8 shadow-card hover:shadow-hover transition-all duration-300 reveal delay-100">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">home</span>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold mb-4">Garde à domicile</h3>
+                    <p class="text-textLight mb-6">
+                        Visites quotidiennes dans votre maison pour nourrir, câliner et jouer avec votre chat. 
+                        J'assure aussi l'entretien de la litière et la sécurité du logement.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2">check_circle</span> 1 à 2 visites par jour</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2">check_circle</span> Photos et nouvelles quotidiennes</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2">check_circle</span> Arrosage des plantes inclus</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-card p-8 shadow-card hover:shadow-hover transition-all duration-300 reveal delay-200">
+                    <div class="bg-secondary/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-secondary text-3xl">medication</span>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold mb-4">Soins médicaux</h3>
+                    <p class="text-textLight mb-6">
+                        Administration de médicaments, suivi de pathologies spécifiques, et attention particulière 
+                        pour les chats âgés ou nécessitant des soins vétérinaires réguliers.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check_circle</span> Compétences en santé féline</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check_circle</span> Collaboration avec votre vétérinaire</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check_circle</span> Surveillance 24h/24 disponible</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-card p-8 shadow-card hover:shadow-hover transition-all duration-300 reveal delay-300">
+                    <div class="bg-primary/10 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">emergency</span>
+                    </div>
+                    <h3 class="text-2xl font-display font-bold mb-4">Urgence & Sécurité</h3>
+                    <p class="text-textLight mb-6">
+                        Service d'urgence disponible 7j/7. Je dispose d'un réseau de vétérinaires de garde et 
+                        suis formée aux premiers secours animaliers. Votre tranquillité d'esprit garantie.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2">check_circle</span> Réactivité immédiate</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2">check_circle</span> Accès à un véhicule</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2">check_circle</span> Assurance professionnelle</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="grid md:grid-cols-3 gap-8">
-          <article class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 text-center">
-            <div class="h-14 w-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-5">
-              <i class="fa-solid fa-heart"></i>
-            </div>
-            <h3 class="text-xl font-display font-bold mb-3">Bien-être & Câlins</h3>
-            <p class="text-sm leading-relaxed text-gray-600 dark:text-gray-300 text-justify">Nourriture, eau fraîche, litière, mais surtout du temps de jeu et d'affection pour votre compagnon.</p>
-          </article>
-          <article class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 text-center">
-            <div class="h-14 w-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-5">
-              <i class="fa-solid fa-stethoscope"></i>
-            </div>
-            <h3 class="text-xl font-display font-bold mb-3">Soins Médicaux</h3>
-            <p class="text-sm leading-relaxed text-gray-600 dark:text-gray-300 text-justify">Administration de médicaments (comprimés, pommades ou soins oculaires) pour les chats nécessitant un suivi particulier. (PAS D'INSULINE).</p>
-          </article>
-          <article class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 text-center">
-            <div class="h-14 w-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mx-auto mb-5">
-              <i class="fa-solid fa-house"></i>
-            </div>
-            <h3 class="text-xl font-display font-bold mb-3">Vigilance & Gestion de domicile</h3>
-            <p class="text-sm leading-relaxed text-gray-600 dark:text-gray-300 text-justify">Au-delà du chat, je veille sur votre domicile. Relève du courrier, aération, arrosage des plantes pour un retour serein.</p>
-          </article>
-        </div>
-      </div>
     </section>
 
-    <section id="protocoles" class="py-20 bg-white dark:bg-gray-900">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <p class="text-secondary font-medium">Espace Propriétaires</p>
-          <h2 class="text-3xl md:text-5xl font-display font-bold mt-3">Protocoles de sérénité</h2>
-        </div>
-        <div class="grid lg:grid-cols-2 gap-8">
-          <div class="bg-lightBg dark:bg-darkBg rounded-[40px] shadow-xl p-8">
-            <div class="flex items-center gap-3 mb-6">
-              <div class="h-12 w-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
-                <i class="fa-solid fa-house"></i>
-              </div>
-              <h3 class="text-2xl font-display font-bold">Logement</h3>
+    <!-- Valeurs Section -->
+    <section id="valeurs" class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <span class="inline-block bg-secondary/20 text-secondaryDark font-medium px-4 py-1.5 rounded-full mb-4">Mon approche</span>
+                    <h2 class="text-4xl lg:text-5xl font-display font-bold mb-6">Des valeurs qui <span class="text-primary">font la différence</span></h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-3 rounded-full">
+                                <span class="material-symbols-outlined text-primary">psychology</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-display font-bold mb-2">Éthologie féline</h3>
+                                <p class="text-textLight">Je m'adapte au langage corporel et aux besoins spécifiques de chaque chat, 
+                                en respectant son rythme et ses préférences.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-secondary/10 p-3 rounded-full">
+                                <span class="material-symbols-outlined text-secondary">shield</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-display font-bold mb-2">Confidentialité totale</h3>
+                                <p class="text-textLight">Votre domicile est traité avec le plus grand respect. Je m'engage à une discrétion 
+                                absolue concernant votre absence et vos biens.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-3 rounded-full">
+                                <span class="material-symbols-outlined text-primary">forum</span>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-display font-bold mb-2">Transparence</h3>
+                                <p class="text-textLight">Photos, vidéos et messages quotidiens. Vous restez connecté à votre animal 
+                                comme si vous étiez là.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reveal delay-200">
+                    <div class="bg-white rounded-card p-8 shadow-card">
+                        <img src="assets/images/chat-domicile-confort-nat-patoune.webp" 
+                             alt="Chat heureux et détendu dans son environnement familier" 
+                             class="w-full h-auto rounded-card mb-6">
+                        <div class="text-center">
+                            <p class="text-2xl font-display font-bold text-primary mb-2">"Chaque chat est unique"</p>
+                            <p class="text-textLight">Mon objectif : préserver le bien-être et les habitudes de votre compagnon, 
+                            pour des retrouvailles sereines.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <ul class="space-y-4">
-              <li class="flex items-center gap-3">
-                <input id="logement-1" type="checkbox" class="h-5 w-5 text-primary rounded border-gray-300">
-                <label for="logement-1">Verrouillage fenêtres</label>
-              </li>
-              <li class="flex items-center gap-3">
-                <input id="logement-2" type="checkbox" class="h-5 w-5 text-primary rounded border-gray-300">
-                <label for="logement-2">Courrier</label>
-              </li>
-              <li class="flex items-center gap-3">
-                <input id="logement-3" type="checkbox" class="h-5 w-5 text-primary rounded border-gray-300">
-                <label for="logement-3">Arrosage</label>
-              </li>
-            </ul>
-          </div>
-          <div class="bg-lightBg dark:bg-darkBg rounded-[40px] shadow-xl p-8">
-            <div class="flex items-center gap-3 mb-6">
-              <div class="h-12 w-12 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
-                <i class="fa-solid fa-paw"></i>
-              </div>
-              <h3 class="text-2xl font-display font-bold">Félin</h3>
-            </div>
-            <ul class="space-y-4">
-              <li class="flex items-center gap-3">
-                <input id="felin-1" type="checkbox" class="h-5 w-5 text-primary rounded border-gray-300">
-                <label for="felin-1">Stocks nourriture</label>
-              </li>
-              <li class="flex items-center gap-3">
-                <input id="felin-2" type="checkbox" class="h-5 w-5 text-primary rounded border-gray-300">
-                <label for="felin-2">Carnet santé</label>
-              </li>
-              <li class="flex items-center gap-3">
-                <input id="felin-3" type="checkbox" class="h-5 w-5 text-primary rounded border-gray-300">
-                <label for="felin-3">Matériel nettoyage</label>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
     </section>
 
-    <section id="tarifs" class="py-20">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <p class="text-secondary font-medium">Tarifs</p>
-          <h2 class="text-3xl md:text-5xl font-display font-bold mt-3">Zones d'intervention</h2>
+    <!-- Tarifs Section -->
+    <section id="tarifs" class="py-20 bg-beige">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block bg-primary/10 text-primary font-medium px-4 py-1.5 rounded-full mb-4">Tarification</span>
+                <h2 class="text-4xl lg:text-5xl font-display font-bold mb-6">Des forfaits <span class="text-primary">clairs et complets</span></h2>
+                <p class="text-lg text-textLight max-w-2xl mx-auto">
+                    Pas de frais cachés. Tous mes forfaits incluent les photos quotidiennes, 
+                    l'entretien de la litière et la sécurité de votre domicile.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Forfait Basique -->
+                <div class="bg-white rounded-card p-8 shadow-card hover:shadow-hover transition-all duration-300 reveal delay-100">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-display font-bold mb-2">Basique</h3>
+                        <div class="text-4xl font-bold text-primary">CHF 25<span class="text-lg text-textLight">/visite</span></div>
+                        <p class="text-textLight">1 chat • 30 minutes</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check</span> Nourriture et eau fraîche</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check</span> Litière nettoyée</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check</span> Temps de jeu et câlins</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check</span> 2 photos par jour</li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-white text-primary border-2 border-primary py-3 rounded-btn font-medium text-center hover:bg-primary/5 transition-all">
+                        Choisir ce forfait
+                    </a>
+                </div>
+                
+                <!-- Forfait Premium -->
+                <div class="bg-primary text-white rounded-card p-8 shadow-hover relative reveal delay-200">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-secondary text-primaryDark font-bold px-4 py-1.5 rounded-full text-sm">Le plus populaire</span>
+                    </div>
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-display font-bold mb-2">Premium</h3>
+                        <div class="text-4xl font-bold">CHF 35<span class="text-lg opacity-90">/visite</span></div>
+                        <p class="opacity-90">Jusqu'à 2 chats • 45 minutes</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="material-symbols-outlined mr-2">check</span> Tout le forfait Basique</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined mr-2">check</span> Soins médicaux inclus</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined mr-2">check</span> Vidéo quotidienne</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined mr-2">check</span> Arrosage des plantes</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined mr-2">check</span> Ramassage du courrier</li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-white text-primary py-3 rounded-btn font-medium text-center hover:bg-cream transition-all">
+                        Choisir ce forfait
+                    </a>
+                </div>
+                
+                <!-- Forfait VIP -->
+                <div class="bg-white rounded-card p-8 shadow-card hover:shadow-hover transition-all duration-300 reveal delay-300">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-display font-bold mb-2">VIP</h3>
+                        <div class="text-4xl font-bold text-primary">CHF 50<span class="text-lg text-textLight">/visite</span></div>
+                        <p class="text-textLight">Sur mesure • 60 minutes</p>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check</span> Tout le forfait Premium</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check</span> Garde jour et nuit possible</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check</span> Transport vétérinaire</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check</span> Service d'urgence 24/7</li>
+                        <li class="flex items-center"><span class="material-symbols-outlined text-primary mr-2">check</span> Surprises personnalisées</li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-primary text-white py-3 rounded-btn font-medium text-center hover:bg-primaryDark transition-all">
+                        Choisir ce forfait
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 reveal delay-350">
+                <p class="text-textLight">Forfaits pour 3 chats ou plus disponibles sur demande. Frais de déplacement inclus dans un rayon de 15km autour de Lausanne.</p>
+            </div>
         </div>
-        <div class="grid md:grid-cols-3 gap-8">
-          <article class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 flex flex-col">
-            <h3 class="text-xl font-display font-bold mb-2">Zone 1</h3>
-            <p class="text-primary text-3xl font-display font-bold mb-4">30 CHF</p>
-            <p class="font-medium mb-3">Morges et environs (liste actuelle a conserver).</p>
-            <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300 max-h-40 overflow-y-auto pr-2">
-              <li>Morges</li>
-              <li>Tolochenaz</li>
-              <li>Saint-Prex</li>
-              <li>Lonay</li>
-              <li>Préverenges</li>
-            </ul>
-          </article>
-          <article class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 flex flex-col">
-            <h3 class="text-xl font-display font-bold mb-2">Zone 2</h3>
-            <p class="text-primary text-3xl font-display font-bold mb-4">35 CHF</p>
-            <p class="font-medium mb-3">Lausanne et Ouest (liste actuelle a conserver).</p>
-            <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300 max-h-40 overflow-y-auto pr-2">
-              <li>Lausanne</li>
-              <li>Renens</li>
-              <li>Prilly</li>
-              <li>Crissier</li>
-              <li>Écublens</li>
-            </ul>
-          </article>
-          <article class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 flex flex-col">
-            <h3 class="text-xl font-display font-bold mb-2">Zone 3</h3>
-            <p class="text-primary text-3xl font-display font-bold mb-4">40 CHF</p>
-            <p class="font-medium mb-3">Échallens et environs (liste actuelle a conserver).</p>
-            <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300 max-h-40 overflow-y-auto pr-2">
-              <li>Échallens</li>
-              <li>Assens</li>
-              <li>Bottens</li>
-              <li>Penthéréaz</li>
-              <li>Boulens</li>
-            </ul>
-          </article>
-        </div>
-      </div>
     </section>
 
-    <section id="cadeau" class="py-20 bg-white dark:bg-gray-900">
-      <div class="max-w-6xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
-        <div>
-          <p class="text-secondary font-medium">Idée Cadeau</p>
-          <h2 class="text-3xl md:text-5xl font-display font-bold mt-3">Offrez de la sérénité avec un Bon Cadeau Nat'Patoune</h2>
-          <p class="mt-4 text-gray-600 dark:text-gray-300">Surprenez un proche avec un moment de confiance et de douceur pour son compagnon félin.</p>
-          <a href="#contact" class="mt-6 inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-primary text-white shadow-lg transition hover:scale-105 hover:bg-primaryDark">Offrir un bon cadeau</a>
-        </div>
-        <div class="relative">
-          <div class="rounded-[32px] shadow-soft bg-gradient-to-br from-primary/10 via-secondary/20 to-white dark:to-gray-800 p-8">
-            <div class="rounded-[24px] border border-primary/20 bg-white dark:bg-gray-900 p-8">
-              <div class="flex items-center justify-between mb-6">
-                <span class="text-sm uppercase tracking-[0.2em] text-primary">Bon Cadeau</span>
-                <i class="fa-solid fa-gift text-primary"></i>
-              </div>
-              <h3 class="text-2xl font-display font-bold mb-3">Nat'Patoune</h3>
-              <p class="text-gray-600 dark:text-gray-300">Valable pour une visite ou un pack sur mesure.</p>
-              <div class="mt-6 flex items-center justify-between">
-                <span class="text-sm">N° 0001</span>
-                <span class="font-display font-bold text-primary">CHF 30+</span>
-              </div>
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-cream">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 reveal">
+                <span class="inline-block bg-secondary/20 text-secondaryDark font-medium px-4 py-1.5 rounded-full mb-4">Conseils experts</span>
+                <h2 class="text-4xl lg:text-5xl font-display font-bold mb-6">Le blog <span class="text-primary">Nat'Patoune</span></h2>
+                <p class="text-lg text-textLight max-w-2xl mx-auto">
+                    Découvrez mes conseils pour le bien-être de votre chat, basés sur l'expérience et l'éthologie féline.
+                </p>
             </div>
-          </div>
+            
+            <div id="blog-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Les articles seront générés dynamiquement par JavaScript -->
+            </div>
+            
+            <div class="text-center mt-12 reveal delay-350">
+                <a href="#blog-archive" class="inline-flex items-center text-primary font-medium hover:text-primaryDark">
+                    <span>Voir tous les articles</span>
+                    <span class="material-symbols-outlined ml-2">arrow_forward</span>
+                </a>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section id="avis" class="py-20">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <p class="text-secondary font-medium">Avis</p>
-          <h2 class="text-3xl md:text-5xl font-display font-bold mt-3">Ils parlent de Nat'Patoune</h2>
-          <div class="mt-4 inline-flex items-center gap-2 bg-white dark:bg-gray-900 px-4 py-2 rounded-full shadow-lg">
-            <i class="fa-brands fa-google text-primary"></i>
-            <span class="font-medium">Note Google 5.0 / 5.0</span>
-            <span class="flex items-center gap-1 text-secondary">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </span>
-          </div>
-        </div>
-        <div class="overflow-hidden">
-          <div class="flex gap-6 w-[200%] animate-infinite-scroll">
-            <div class="flex gap-6 w-1/2">
-              <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-6 w-80">
-                <p class="font-medium">"Une présence rassurante et beaucoup d'attention pour notre chat."</p>
-                <p class="mt-3 text-sm text-gray-500 dark:text-gray-400">- Claire M.</p>
-              </div>
-              <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-6 w-80">
-                <p class="font-medium">"Photos quotidiennes et maison impeccable, merci !"</p>
-                <p class="mt-3 text-sm text-gray-500 dark:text-gray-400">- Julien P.</p>
-              </div>
-              <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-6 w-80">
-                <p class="font-medium">"Professionnelle et douce, notre chat l'adore."</p>
-                <p class="mt-3 text-sm text-gray-500 dark:text-gray-400">- Aline R.</p>
-              </div>
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-primary/5 via-secondary/5 to-cream">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16 reveal">
+                    <span class="inline-block bg-primary/10 text-primary font-medium px-4 py-1.5 rounded-full mb-4">Premier contact</span>
+                    <h2 class="text-4xl lg:text-5xl font-display font-bold mb-6">Préparons ensemble <span class="text-primary">le séjour idéal</span></h2>
+                    <p class="text-lg text-textLight">
+                        Une visite gratuite à domicile pour faire connaissance, évaluer les besoins de votre chat 
+                        et établir un plan de garde personnalisé.
+                    </p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div class="reveal">
+                        <div class="bg-white rounded-card p-8 shadow-card">
+                            <h3 class="text-2xl font-display font-bold mb-6">Formulaire de contact</h3>
+                            <form id="contact-form" class="space-y-6">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="name" class="block text-sm font-medium mb-2">Nom complet *</label>
+                                        <input type="text" id="name" required 
+                                               class="w-full px-4 py-3 border border-gray-200 rounded-input focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-sm font-medium mb-2">Email *</label>
+                                        <input type="email" id="email" required 
+                                               class="w-full px-4 py-3 border border-gray-200 rounded-input focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium mb-2">Téléphone</label>
+                                    <input type="tel" id="phone" 
+                                           class="w-full px-4 py-3 border border-gray-200 rounded-input focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+                                </div>
+                                
+                                <div>
+                                    <label for="message" class="block text-sm font-medium mb-2">Message *</label>
+                                    <textarea id="message" rows="4" required 
+                                              class="w-full px-4 py-3 border border-gray-200 rounded-input focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"></textarea>
+                                </div>
+                                
+                                <div>
+                                    <label for="cats" class="block text-sm font-medium mb-2">Nombre de chats</label>
+                                    <select id="cats" 
+                                            class="w-full px-4 py-3 border border-gray-200 rounded-input focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all">
+                                        <option value="1">1 chat</option>
+                                        <option value="2">2 chats</option>
+                                        <option value="3">3 chats</option>
+                                        <option value="4+">4 chats ou plus</option>
+                                    </select>
+                                </div>
+                                
+                                <button type="submit" 
+                                        class="w-full bg-primary text-white py-3.5 rounded-btn font-medium hover:bg-primaryDark transition-all shadow-soft hover:shadow-hover">
+                                    Envoyer ma demande
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="reveal delay-200">
+                        <div class="space-y-8">
+                            <div class="bg-white rounded-card p-8 shadow-card">
+                                <h3 class="text-2xl font-display font-bold mb-4">Coordonnées</h3>
+                                <div class="space-y-4">
+                                    <div class="flex items-start space-x-3">
+                                        <span class="material-symbols-outlined text-primary mt-1">location_on</span>
+                                        <div>
+                                            <p class="font-medium">Zone d'intervention</p>
+                                            <p class="text-textLight">Lausanne et canton de Vaud</p>
+                                            <p class="text-sm text-textLight">Rayon de 30km autour de Lausanne</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-3">
+                                        <span class="material-symbols-outlined text-primary mt-1">mail</span>
+                                        <div>
+                                            <p class="font-medium">Email</p>
+                                            <a href="mailto:contact@natpatoune.ch" class="text-primary hover:text-primaryDark">contact@natpatoune.ch</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-3">
+                                        <span class="material-symbols-outlined text-primary mt-1">phone</span>
+                                        <div>
+                                            <p class="font-medium">Téléphone</p>
+                                            <a href="tel:+41791234567" class="text-primary hover:text-primaryDark">+41 79 123 45 67</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start space-x-3">
+                                        <span class="material-symbols-outlined text-primary mt-1">schedule</span>
+                                        <div>
+                                            <p class="font-medium">Disponibilités</p>
+                                            <p class="text-textLight">7j/7, de 8h à 20h</p>
+                                            <p class="text-sm text-textLight">Urgences : 24h/24</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-secondary/10 rounded-card p-8">
+                                <h3 class="text-2xl font-display font-bold mb-4">Pourquoi choisir Nat'Patoune ?</h3>
+                                <ul class="space-y-3">
+                                    <li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2">verified</span> Certifications en éthologie féline</li>
+                                    <li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2">verified</span> Assurance responsabilité civile professionnelle</li>
+                                    <li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2">verified</span> Références vérifiées disponibles</li>
+                                    <li class="flex items-center"><span class="material-symbols-outlined text-secondary mr-2">verified</span> Formation premiers secours animaliers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="flex gap-6 w-1/2">
-              <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-6 w-80">
-                <p class="font-medium">"Un service premium qui apporte une vraie sérénité."</p>
-                <p class="mt-3 text-sm text-gray-500 dark:text-gray-400">- Marc D.</p>
-              </div>
-              <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-6 w-80">
-                <p class="font-medium">"Nos plantes aussi ont été chouchoutées !"</p>
-                <p class="mt-3 text-sm text-gray-500 dark:text-gray-400">- Sophie L.</p>
-              </div>
-              <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-6 w-80">
-                <p class="font-medium">"Toujours ponctuelle, toujours attentive."</p>
-                <p class="mt-3 text-sm text-gray-500 dark:text-gray-400">- Eva S.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <section id="galerie" class="py-20 bg-white dark:bg-gray-900">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <p class="text-secondary font-medium">Galerie</p>
-          <h2 class="text-3xl md:text-5xl font-display font-bold mt-3">Moments de douceur</h2>
+    <!-- Footer -->
+    <footer class="bg-text text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <span class="material-symbols-outlined text-secondary">pets</span>
+                        <span class="font-display font-bold text-xl">Nat'Patoune</span>
+                    </div>
+                    <p class="text-gray-300 text-sm">
+                        Garde de chats premium à domicile dans le canton de Vaud. 
+                        Sérénité pour vous, confort pour eux.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#services" class="hover:text-white transition-colors">Garde à domicile</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Soins médicaux</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Service d'urgence</a></li>
+                        <li><a href="#tarifs" class="hover:text-white transition-colors">Tarifs</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-4">Ressources</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#blog" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#confiance" class="hover:text-white transition-colors">Ils me font confiance</a></li>
+                        <li><a href="#mentions" class="hover:text-white transition-colors">Mentions légales</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-4">Social</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
+                            <span class="material-symbols-outlined">instagram</span>
+                        </a>
+                        <a href="#" class="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
+                            <span class="material-symbols-outlined">facebook</span>
+                        </a>
+                        <a href="#" class="bg-white/10 p-2 rounded-full hover:bg-white/20 transition-colors">
+                            <span class="material-symbols-outlined">photo_library</span>
+                        </a>
+                    </div>
+                    <p class="text-gray-300 text-sm mt-4">
+                        Suivez les aventures de mes petits protégés !
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2024 Nat'Patoune - Garde de chats premium Vaud. Tous droits réservés.</p>
+                <p class="mt-2">SIRET: 123 456 789 00010 • Assurance RC Pro n° XYZ123456</p>
+            </div>
         </div>
-        <div class="grid md:grid-cols-3 gap-6">
-          <img src="assets/img/galerie-chat-1.webp" alt="Chat 1" class="rounded-[32px] shadow-xl transition-transform duration-300 hover:scale-105">
-          <img src="assets/img/galerie-chat-2.webp" alt="Chat 2" class="rounded-[32px] shadow-xl transition-transform duration-300 hover:scale-105">
-          <img src="assets/img/galerie-chat-3.webp" alt="Chat 3" class="rounded-[32px] shadow-xl transition-transform duration-300 hover:scale-105">
-          <img src="assets/img/galerie-chat-4.webp" alt="Chat 4" class="rounded-[32px] shadow-xl transition-transform duration-300 hover:scale-105">
-          <img src="assets/img/galerie-chat-5.webp" alt="Chat 5" class="rounded-[32px] shadow-xl transition-transform duration-300 hover:scale-105">
-          <img src="assets/img/galerie-chat-6.webp" alt="Chat 6" class="rounded-[32px] shadow-xl transition-transform duration-300 hover:scale-105">
-        </div>
-      </div>
-    </section>
+    </footer>
 
-    <section id="blog" class="py-20">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <p class="text-secondary font-medium">Blog</p>
-          <h2 class="text-3xl md:text-5xl font-display font-bold mt-3">Conseils Nat'Patoune</h2>
-        </div>
-        <div class="grid md:grid-cols-3 gap-6">
-          <button class="text-left bg-white dark:bg-gray-900 rounded-[32px] shadow-xl overflow-hidden" data-modal-target="modal-bien-etre">
-            <img src="assets/img/garde-chat-domicile-sans-stress-vaud.webp" alt="Bien-être" class="h-48 w-full object-cover">
-            <div class="p-6">
-              <h3 class="font-display font-bold text-xl">Bien-être</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Rituels apaisants pour un chat serein.</p>
-            </div>
-          </button>
-          <button class="text-left bg-white dark:bg-gray-900 rounded-[32px] shadow-xl overflow-hidden" data-modal-target="modal-vacances">
-            <img src="assets/img/cat-sitting-domicile-vacances-suisse.webp" alt="Vacances" class="h-48 w-full object-cover">
-            <div class="p-6">
-              <h3 class="font-display font-bold text-xl">Vacances</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Préparer son départ sans stress.</p>
-            </div>
-          </button>
-          <button class="text-left bg-white dark:bg-gray-900 rounded-[32px] shadow-xl overflow-hidden" data-modal-target="modal-soins">
-            <img src="assets/img/cat-sitter-chat-age-anxieux-nat-patoune.webp" alt="Soins/Anxieux" class="h-48 w-full object-cover">
-            <div class="p-6">
-              <h3 class="font-display font-bold text-xl">Soins/Anxieux</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Accompagner les chats sensibles.</p>
-            </div>
-          </button>
-          <button class="text-left bg-white dark:bg-gray-900 rounded-[32px] shadow-xl overflow-hidden" data-modal-target="modal-hydratation">
-            <img src="assets/img/galerie-chat-1.webp" alt="Hydratation" class="h-48 w-full object-cover">
-            <div class="p-6">
-              <h3 class="font-display font-bold text-xl">Hydratation</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Gardez une eau fraîche et attirante.</p>
-            </div>
-          </button>
-          <button class="text-left bg-white dark:bg-gray-900 rounded-[32px] shadow-xl overflow-hidden" data-modal-target="modal-hygiene">
-            <img src="assets/img/chaton-cache-couverture.webp" alt="Hygiène" class="h-48 w-full object-cover">
-            <div class="p-6">
-              <h3 class="font-display font-bold text-xl">Hygiène</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Routines propres et apaisantes.</p>
-            </div>
-          </button>
-          <button class="text-left bg-white dark:bg-gray-900 rounded-[32px] shadow-xl overflow-hidden" data-modal-target="modal-jeux">
-            <img src="assets/img/galerie-chat-2.webp" alt="Jeux" class="h-48 w-full object-cover">
-            <div class="p-6">
-              <h3 class="font-display font-bold text-xl">Jeux</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">Stimuler l'énergie avec douceur.</p>
-            </div>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="py-20 bg-white dark:bg-gray-900">
-      <div class="max-w-6xl mx-auto px-4">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <h2 class="text-3xl md:text-5xl font-display font-bold">Réserver une visite</h2>
-          <p class="mt-4 text-gray-600 dark:text-gray-300">Contactez Nat'Patoune pour planifier un premier rendez-vous personnalisé.</p>
-        </div>
-        <div class="grid lg:grid-cols-5 gap-10">
-          <div class="lg:col-span-2 bg-lightBg dark:bg-darkBg rounded-[32px] shadow-xl p-8">
-            <h3 class="text-xl font-display font-bold mb-4">Coordonnées directes</h3>
-            <div class="space-y-4 text-sm text-gray-600 dark:text-gray-300">
-              <p class="flex items-center gap-3"><i class="fa-solid fa-phone text-primary"></i> <a href="tel:+41790000000" class="font-semibold text-gray-900 dark:text-white">+41 79 000 00 00</a></p>
-              <p class="flex items-center gap-3"><i class="fa-solid fa-envelope text-primary"></i> <a href="mailto:miaou@nat-patoune.ch" class="font-semibold text-gray-900 dark:text-white">miaou@nat-patoune.ch</a></p>
-              <p class="flex items-center gap-3"><i class="fa-solid fa-location-dot text-primary"></i> Lausanne et régions proches</p>
-              <div class="rounded-2xl bg-white dark:bg-gray-900 p-4 text-sm text-gray-600 dark:text-gray-300">
-                <p class="font-semibold text-gray-900 dark:text-white">Pré-visite offerte</p>
-                <p class="mt-1">Un premier rendez-vous pour connaître votre chat, vos habitudes et vos attentes.</p>
-              </div>
-            </div>
-          </div>
-          <form class="lg:col-span-3 bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 text-left">
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <label class="text-sm font-semibold">Prénom & Nom</label>
-                <input type="text" name="name" placeholder="Votre nom complet" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent" required>
-              </div>
-              <div>
-                <label class="text-sm font-semibold">Email</label>
-                <input type="email" name="email" placeholder="vous@email.ch" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent" required>
-              </div>
-              <div>
-                <label class="text-sm font-semibold">Téléphone</label>
-                <input type="tel" name="phone" placeholder="+41 79 000 00 00" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent" required>
-              </div>
-              <div>
-                <label class="text-sm font-semibold">Commune</label>
-                <input type="text" name="city" placeholder="Morges, Lausanne..." class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent">
-              </div>
-              <div>
-                <label class="text-sm font-semibold">Nombre de chats</label>
-                <select name="cats" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3+</option>
-                </select>
-              </div>
-              <div>
-                <label class="text-sm font-semibold">Zone souhaitée</label>
-                <select name="zone" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent">
-                  <option>Zone proximité (dès 25.–)</option>
-                  <option>Zone 1</option>
-                  <option>Zone 2</option>
-                  <option>Zone 3</option>
-                </select>
-              </div>
-              <div>
-                <label class="text-sm font-semibold">Date de début</label>
-                <input type="date" name="start-date" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent">
-              </div>
-              <div>
-                <label class="text-sm font-semibold">Date de fin</label>
-                <input type="date" name="end-date" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent">
-              </div>
-            </div>
-            <div class="mt-6">
-              <label class="text-sm font-semibold">Message</label>
-              <textarea name="message" rows="4" placeholder="Décrivez vos besoins (visites, soins, habitudes...)" class="mt-2 w-full rounded-2xl border border-gray-200 dark:border-gray-700 px-4 py-3 bg-transparent"></textarea>
-            </div>
-            <div class="mt-6 flex flex-wrap items-center gap-4 text-sm text-gray-600 dark:text-gray-300">
-              <span class="font-semibold text-gray-900 dark:text-white">Préférence de contact :</span>
-              <label class="flex items-center gap-2">
-                <input type="radio" name="contact-preference" value="telephone" class="text-primary">
-                Téléphone
-              </label>
-              <label class="flex items-center gap-2">
-                <input type="radio" name="contact-preference" value="whatsapp" class="text-primary">
-                WhatsApp
-              </label>
-              <label class="flex items-center gap-2">
-                <input type="radio" name="contact-preference" value="email" class="text-primary" checked>
-                Email
-              </label>
-            </div>
-            <button type="submit" class="mt-8 inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-primary text-white shadow-lg transition hover:scale-105 hover:bg-primaryDark">Envoyer la demande</button>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="bg-darkBg text-white py-12">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-      <div>
-        <h3 class="font-display font-bold text-xl mb-4">Coordonnées</h3>
-        <p>Nat'Patoune</p>
-        <p>Lausanne, Suisse</p>
-        <p>Téléphone : <a href="tel:+41790000000" class="text-secondary">+41 79 000 00 00</a></p>
-        <p>Email : <a href="mailto:miaou@nat-patoune.ch" class="text-secondary">miaou@nat-patoune.ch</a></p>
-      </div>
-      <div>
-        <h3 class="font-display font-bold text-xl mb-4">Légal</h3>
-        <ul class="space-y-2">
-          <li><button class="hover:text-secondary" data-modal-target="modal-cgv">CGV</button></li>
-          <li><button class="hover:text-secondary" data-modal-target="modal-mentions">Mentions Légales</button></li>
-          <li><button class="hover:text-secondary" data-modal-target="modal-confidentialite">Confidentialité</button></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="font-display font-bold text-xl mb-4">Crédit</h3>
-        <p>Site créé par Agence Clicom.ch</p>
-      </div>
-    </div>
-  </footer>
-
-  <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-40">
-    <a href="https://wa.me/41790000000" class="h-12 w-12 rounded-2xl bg-primary text-white flex items-center justify-center shadow-lg transition hover:scale-105" aria-label="WhatsApp">
-      <i class="fa-brands fa-whatsapp"></i>
-    </a>
-    <a href="tel:+41790000000" class="h-12 w-12 rounded-2xl bg-secondary text-white flex items-center justify-center shadow-lg transition hover:scale-105" aria-label="Téléphone">
-      <i class="fa-solid fa-phone"></i>
-    </a>
-    <button id="back-to-top" class="h-12 w-12 rounded-2xl bg-white text-primary flex items-center justify-center shadow-lg transition hover:scale-105" aria-label="Retour haut">
-      <i class="fa-solid fa-arrow-up"></i>
+    <!-- Bouton de téléchargement PDF -->
+    <button id="download-btn" class="bg-secondary text-white p-4 rounded-full shadow-lg hover:bg-secondaryDark transition-all">
+        <span class="material-symbols-outlined">download</span>
     </button>
-  </div>
 
-  <div id="cookie-banner" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-900 border border-secondary/40 rounded-2xl shadow-lg p-4 max-w-xl w-[90%] hidden">
-    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3">
-      <p class="text-sm text-gray-600 dark:text-gray-300">Nous utilisons des cookies pour améliorer votre expérience sur Nat'Patoune.</p>
-      <button id="accept-cookies" class="ml-auto px-4 py-2 rounded-xl bg-primary text-white shadow-lg transition hover:scale-105">Accepter</button>
-    </div>
-  </div>
-
-  <div id="loyalty-popup" class="fixed inset-0 bg-black/60 items-center justify-center hidden z-50">
-    <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 max-w-md w-[90%] text-center relative">
-      <button id="close-loyalty" class="absolute top-4 right-4 h-10 w-10 rounded-xl border border-primary text-primary flex items-center justify-center">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-      <p class="text-secondary font-medium">Fidélité</p>
-      <h3 class="text-2xl font-display font-bold mt-3">11ème visite offerte</h3>
-      <p class="mt-3 text-gray-600 dark:text-gray-300">Votre confiance mérite une récompense.</p>
-      <button id="loyalty-cta" class="mt-6 px-6 py-3 rounded-2xl bg-primary text-white shadow-lg transition hover:scale-105">Découvrir</button>
-    </div>
-  </div>
-
-  <div id="modal-bien-etre" class="modal fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-    <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 max-w-2xl w-[90%]">
-      <div class="flex items-center justify-between mb-4">
-        <h3 class="text-2xl font-display font-bold">Bien-être</h3>
-        <button class="modal-close text-primary" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <p class="text-gray-600 dark:text-gray-300">Créez une routine douce avec des horaires de repas réguliers, des coins de repos et des moments de jeu adaptés au caractère de votre chat.</p>
-    </div>
-  </div>
-  <div id="modal-vacances" class="modal fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-    <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 max-w-2xl w-[90%]">
-      <div class="flex items-center justify-between mb-4">
-        <h3 class="text-2xl font-display font-bold">Vacances</h3>
-        <button class="modal-close text-primary" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <p class="text-gray-600 dark:text-gray-300">Préparez une valise de sérénité : consignes claires, stock de nourriture, carnet de santé et objets familiers.</p>
-    </div>
-  </div>
-  <div id="modal-soins" class="modal fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-    <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 max-w-2xl w-[90%]">
-      <div class="flex items-center justify-between mb-4">
-        <h3 class="text-2xl font-display font-bold">Soins/Anxieux</h3>
-        <button class="modal-close text-primary" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <p class="text-gray-600 dark:text-gray-300">Les chats âgés ou anxieux ont besoin d'un suivi calme : gestes lents, voix douce et repères constants.</p>
-    </div>
-  </div>
-  <div id="modal-hydratation" class="modal fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-    <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 max-w-2xl w-[90%]">
-      <div class="flex items-center justify-between mb-4">
-        <h3 class="text-2xl font-display font-bold">Hydratation</h3>
-        <button class="modal-close text-primary" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <p class="text-gray-600 dark:text-gray-300">Variez les points d'eau et nettoyez les bols pour encourager une hydratation régulière.</p>
-    </div>
-  </div>
-  <div id="modal-hygiene" class="modal fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-    <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 max-w-2xl w-[90%]">
-      <div class="flex items-center justify-between mb-4">
-        <h3 class="text-2xl font-display font-bold">Hygiène</h3>
-        <button class="modal-close text-primary" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <p class="text-gray-600 dark:text-gray-300">Une litière propre et des accessoires entretenus limitent le stress et favorisent un comportement équilibré.</p>
-    </div>
-  </div>
-  <div id="modal-jeux" class="modal fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-    <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 max-w-2xl w-[90%]">
-      <div class="flex items-center justify-between mb-4">
-        <h3 class="text-2xl font-display font-bold">Jeux</h3>
-        <button class="modal-close text-primary" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <p class="text-gray-600 dark:text-gray-300">Alternez jeux de chasse et séances d'observation pour maintenir un bon équilibre physique et émotionnel.</p>
-    </div>
-  </div>
-
-  <div id="modal-cgv" class="modal fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-    <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 max-w-2xl w-[90%]">
-      <div class="flex items-center justify-between mb-4">
-        <h3 class="text-2xl font-display font-bold">CGV</h3>
-        <button class="modal-close text-primary" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <p class="text-gray-600 dark:text-gray-300">Les prestations Nat'Patoune sont réservées après validation d'un devis. Toute annulation doit être signalée 48h avant la visite.</p>
-    </div>
-  </div>
-  <div id="modal-mentions" class="modal fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-    <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 max-w-2xl w-[90%]">
-      <div class="flex items-center justify-between mb-4">
-        <h3 class="text-2xl font-display font-bold">Mentions Légales</h3>
-        <button class="modal-close text-primary" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <p class="text-gray-600 dark:text-gray-300">Nat'Patoune, Lausanne. Contact : miaou@nat-patoune.ch.</p>
-    </div>
-  </div>
-  <div id="modal-confidentialite" class="modal fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
-    <div class="bg-white dark:bg-gray-900 rounded-[32px] shadow-xl p-8 max-w-2xl w-[90%]">
-      <div class="flex items-center justify-between mb-4">
-        <h3 class="text-2xl font-display font-bold">Confidentialité</h3>
-        <button class="modal-close text-primary" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <p class="text-gray-600 dark:text-gray-300">Vos données sont utilisées uniquement pour traiter vos demandes et ne sont jamais vendues.</p>
-    </div>
-  </div>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const mobileToggle = document.getElementById('mobile-menu-toggle');
-      const mobileMenu = document.getElementById('mobile-menu');
-      if (mobileToggle && mobileMenu) {
-        mobileToggle.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
+    <!-- JavaScript -->
+    <script>
+        // Gestion du menu mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeMobileMenu = document.getElementById('close-mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-y-full');
+            document.body.style.overflow = 'hidden';
         });
-      }
-
-      const modalButtons = document.querySelectorAll('[data-modal-target]');
-      const modals = document.querySelectorAll('.modal');
-      modalButtons.forEach((button) => {
-        if (!button) return;
-        button.addEventListener('click', () => {
-          const targetId = button.getAttribute('data-modal-target');
-          const modal = document.getElementById(targetId);
-          if (modal) {
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-          }
+        
+        closeMobileMenu.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-y-full');
+            document.body.style.overflow = '';
         });
-      });
-      modals.forEach((modal) => {
-        if (!modal) return;
-        const closeButton = modal.querySelector('.modal-close');
-        if (closeButton) {
-          closeButton.addEventListener('click', () => {
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-          });
+        
+        // Fermer le menu en cliquant sur un lien
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-y-full');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Animation au scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        
+        // Génération des articles de blog
+        const blogContainer = document.getElementById('blog-container');
+        if (blogContainer && blogArticles) {
+            blogArticles.forEach(article => {
+                const articleHTML = `
+                    <div class="bg-white rounded-card overflow-hidden shadow-card hover:shadow-hover transition-all duration-300 reveal">
+                        <div class="aspect-video bg-gray-100 relative">
+                            <img src="${article.image}" alt="${article.title}" class="w-full h-full object-cover">
+                            <span class="absolute top-3 left-3 bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">${article.category}</span>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-display font-bold mb-3 line-clamp-2">${article.title}</h3>
+                            <p class="text-textLight mb-4 line-clamp-3">${article.excerpt}</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-textLight">${article.date}</span>
+                                <a href="#article-${article.id}" class="text-primary font-medium hover:text-primaryDark flex items-center">
+                                    <span>Lire</span>
+                                    <span class="material-symbols-outlined ml-1 text-lg">arrow_forward</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                blogContainer.innerHTML += articleHTML;
+            });
         }
-        modal.addEventListener('click', (event) => {
-          if (event.target === modal) {
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-          }
-        });
-      });
-
-      const backToTop = document.getElementById('back-to-top');
-      if (backToTop) {
-        backToTop.addEventListener('click', () => {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-      }
-
-      const cookieBanner = document.getElementById('cookie-banner');
-      const acceptCookies = document.getElementById('accept-cookies');
-      if (cookieBanner && acceptCookies) {
-        const cookieAccepted = localStorage.getItem('cookiesAccepted');
-        if (!cookieAccepted) {
-          cookieBanner.classList.remove('hidden');
+        
+        // Gestion du formulaire de contact
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                // Récupération des données du formulaire
+                const formData = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    message: document.getElementById('message').value,
+                    cats: document.getElementById('cats').value
+                };
+                
+                // Ici, vous intégreriez l'envoi vers votre backend
+                console.log('Formulaire soumis:', formData);
+                
+                // Message de succès (à remplacer par l'envoi réel)
+                alert('Merci pour votre message ! Je vous répondrai dans les plus brefs délais.');
+                contactForm.reset();
+            });
         }
-        acceptCookies.addEventListener('click', () => {
-          localStorage.setItem('cookiesAccepted', 'true');
-          cookieBanner.classList.add('hidden');
-        });
-      }
-
-      const loyaltyPopup = document.getElementById('loyalty-popup');
-      const closeLoyalty = document.getElementById('close-loyalty');
-      const loyaltyCta = document.getElementById('loyalty-cta');
-      if (loyaltyPopup) {
-        const loyaltySeen = localStorage.getItem('loyaltySeen');
-        if (!loyaltySeen) {
-          setTimeout(() => {
-            loyaltyPopup.classList.remove('hidden');
-            loyaltyPopup.classList.add('flex');
-          }, 5000);
+        
+        // Bouton de téléchargement PDF
+        const downloadBtn = document.getElementById('download-btn');
+        if (downloadBtn) {
+            downloadBtn.addEventListener('click', () => {
+                // Création d'un PDF simplifié
+                const docDefinition = {
+                    content: [
+                        { text: 'Nat\'Patoune - Devis et Informations', style: 'header' },
+                        { text: '\n' },
+                        { text: 'Garde de chats premium à domicile', style: 'subheader' },
+                        { text: '\n\n' },
+                        { text: 'Services proposés:', style: 'section' },
+                        { ul: [
+                            'Garde à domicile (visites quotidiennes)',
+                            'Soins médicaux et administration de traitements',
+                            'Service d\'urgence 24h/24',
+                            'Surveillance de votre domicile',
+                            'Photos et nouvelles quotidiennes'
+                        ]},
+                        { text: '\n\n' },
+                        { text: 'Tarifs:', style: 'section' },
+                        { ul: [
+                            'Forfait Basique: CHF 25/visite (1 chat, 30 min)',
+                            'Forfait Premium: CHF 35/visite (2 chats, 45 min)',
+                            'Forfait VIP: CHF 50/visite (sur mesure, 60 min)'
+                        ]},
+                        { text: '\n\n' },
+                        { text: 'Contact:', style: 'section' },
+                        { text: 'Tél: +41 79 123 45 67' },
+                        { text: 'Email: contact@natpatoune.ch' },
+                        { text: 'Zone: Lausanne et canton de Vaud' }
+                    ],
+                    styles: {
+                        header: { fontSize: 22, bold: true, color: '#8F78D3', margin: [0, 0, 0, 10] },
+                        subheader: { fontSize: 14, italics: true, color: '#666666' },
+                        section: { fontSize: 16, bold: true, margin: [0, 10, 0, 5] }
+                    }
+                };
+                
+                // Utilisation de pdfMake si disponible
+                if (typeof pdfMake !== 'undefined') {
+                    pdfMake.createPdf(docDefinition).download('NatPatoune-Devis.pdf');
+                } else {
+                    // Fallback simple
+                    window.open('https://natpatoune.ch/devis.pdf', '_blank');
+                }
+            });
         }
-      }
-      if (closeLoyalty && loyaltyPopup) {
-        closeLoyalty.addEventListener('click', () => {
-          localStorage.setItem('loyaltySeen', 'true');
-          loyaltyPopup.classList.add('hidden');
-          loyaltyPopup.classList.remove('flex');
+        
+        // Smooth scroll pour les ancres
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                e.preventDefault();
+                const targetElement = document.querySelector(href);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
         });
-      }
-      if (loyaltyCta && loyaltyPopup) {
-        loyaltyCta.addEventListener('click', () => {
-          localStorage.setItem('loyaltySeen', 'true');
-          loyaltyPopup.classList.add('hidden');
-          loyaltyPopup.classList.remove('flex');
-        });
-      }
-    });
-  </script>
+    </script>
 </body>
 </html>
